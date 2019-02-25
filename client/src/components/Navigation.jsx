@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 
-import Home from "./home/Home";
-import About from "./about/About";
-import Contact from "./contact/Contact";
-import Projects from "./projects/Projects";
-
 class Navigation extends Component {
   render() {
     return (
       <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
           <a class="navbar-brand" href="/">
-            Portfolio Builder by Andrea
+            Portfolio Builder
           </a>
           <button
             class="navbar-toggler"

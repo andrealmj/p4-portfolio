@@ -1,12 +1,45 @@
 import React, { Component } from "react";
+import { api } from "../functions";
 
 class About extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            about: { email: ['abcd'] }
+        }
+    }
+
+    componentDidMount() {
+        this.updateFromDb();
+    }
+
+    updateFromDb() {
+		api("GET", "abouts").then(val => {
+			if (val.data.success === false) {
+				return;
+			} else {
+				this.setState({ about: val.data });
+			}
+		});
+	}
+
     render() {
-        return (
-            <div>
-                <h1>AAaaaaaaaaabout me</h1>
-            </div>
-        )
+
+        console.log(this.state.about);
+
+        if (this.state.about.email.length > 0) {
+            return (
+                <div>
+                    <h1>About Me:</h1>
+                    <br />
+                    E-mail: {this.state.about.email}
+                </div>
+            )
+        } else {
+            return (
+                <div>Loading...</div>
+            )
+        }
     }
 }
 

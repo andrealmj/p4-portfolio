@@ -195,3 +195,23 @@ Processing by AboutsController#index as HTML
 Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 4.4ms)
 
 
+Started GET "/abouts" for 127.0.0.1 at 2019-02-25 23:22:19 +0800
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/abouts" for 127.0.0.1 at 2019-02-25 23:22:51 +0800
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/abouts_controller.rb:6
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-25 23:28:03 +0800
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/abouts_controller.rb:5
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
