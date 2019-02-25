@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 // import './App.css';
 
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Projects from "./components/projects/Projects";
+
 class App extends Component {
   render() {
     return (
@@ -25,25 +29,25 @@ class App extends Component {
             <ul class="navbar-nav ml-auto">
 
               <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/">
                   Home <span class="sr-only">(current)</span>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/abouts">
                   About Me
                 </a>
               </li> 
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  My Work
+                <a class="nav-link" href="/projects">
+                  My Projects
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/contacts">
                   Contact
                 </a>
               </li>
