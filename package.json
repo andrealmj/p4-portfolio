@@ -1,6 +1,0 @@
-{
-  "name": "server",
-  "private": true,
-  "dependencies": {},
-  "proxy": "http://localhost:5000"
-}
