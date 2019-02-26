@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Axios from "axios";
 
+import EditAbout from "./EditAbout";
+
 class About extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +13,8 @@ class About extends Component {
         email: null,
         phone: null,
         everythingIsOk: false
-      }
+      },
+      showEditForm: false
     };
   }
 
@@ -46,22 +49,54 @@ class About extends Component {
     if (this.state.everythingIsOk) {
       return (
         <div>
-          <h1>About Me:</h1>
-          <br />
-          <h3>ALLOW IMAGE UPLOAD HERE !!! Cloudinary</h3>
-          <br />
-          {this.state.about.bio}
-          <hr />
-          Name: {this.state.about.name}
-          <br />
-          E-mail: {this.state.about.email}
-          <br />
-          Phone number: {this.state.about.phone}
-          <br />
+            <div className="about">
+                <h1>About Me:</h1>
+                <br />
+                <h3>ALLOW IMAGE UPLOAD HERE !!! Cloudinary</h3>
+                <br />
+                {this.state.about.bio}
+                <hr />
+                Name: {this.state.about.name}
+                <br />
+                E-mail: {this.state.about.email}
+                <br />
+                Phone number: {this.state.about.phone}
+                <br />
+            </div>
+          
+            <button type="button" className="btn btn-outline-dark">Edit</button>
+
+            {/* Button Trigger Modal */}
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  EDIT MODAL
+</button>
+
+{/* Modal */}
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">About Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <EditAbout />
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       );
     } else {
-      return <div>Loading...</div>;
+        return (
+            <div>
+                <h1>About Me:</h1>
+                <br />
+                Loading...
+            </div>
+        );
     }
   }
 }
