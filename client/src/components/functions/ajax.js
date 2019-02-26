@@ -8,7 +8,6 @@ const api = (method, url, data, token = true) => {
 				method: method,
 				url: url,
 				data: data,
-				headers: { Authorization: `${localStorage.getItem("token")}`, 'Content-Type': 'application/json'}
 			}).then(val => {
 				resolve(val);
 			}).catch(err=>{
@@ -23,7 +22,6 @@ const api = (method, url, data, token = true) => {
 				method: method,
 				url: url,
 				data:data,
-				headers: { Authorization: `${localStorage.getItem("token")}`, 'Content-Type': 'application/json' }
 			}).then(val => {
 				resolve(val);
 			}).catch(err=>{
@@ -38,7 +36,6 @@ const api = (method, url, data, token = true) => {
 				method: method,
 				url: url,
 				data: data,
-				headers: { Authorization: `${localStorage.getItem("token")}`, 'Content-Type': 'application/json' }
 			}).then(val => {
 				resolve(val);
 			}).catch(err=>{
