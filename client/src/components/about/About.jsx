@@ -5,7 +5,7 @@ class About extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            about: { email: ['abcd'] }
+            about: { email: [] }
         }
     }
 

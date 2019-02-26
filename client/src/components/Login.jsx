@@ -35,7 +35,7 @@ class Login extends Component {
 
   handleChange(e) {
     let target = e.target;
-    if ("username" === target.name) {
+    if ("email" === target.name) {
       this.setState({ [target.name]: target.value });
     } else if ("password" === target.name) {
       this.setState({ [target.name]: target.value });
@@ -46,38 +46,28 @@ class Login extends Component {
 
   dbCreateUser() {
 		console.log("creating new user..")
-    api(
-      "POST",
-      "users",
-      {
-        user: { username: this.state.username, password: this.state.password }
-      },
-      false
-    ).then(val => {
-      if (val.status === 200) {
-        api(
-          "POST",
-          "users/sign_in",
-          {
-            user: {
-              email: this.state.email,
-              password: this.state.password
-            }
-          },
-          false
-        ).then(val => {
-          if (val.status === 200) {
-            localStorage.setItem("isLoggedIn", "true");
-            localStorage.setItem("token", val.headers.authorization);
-            this.setState({ isLoggedIn: true });
-          }
-        });
-      } else {
-        this.setState({
+
+		// make a post req to create new acc
+		Axios({
+			method: "POST",
+			url: "/users",
+			data: { user: { email: this.state.email, password: this.state.password } }
+		}).then( val => 
+			// after creating new acc, log them in
+			Axios({
+				method: "POST",
+				url: "/users/sign_in",
+				data: { user: { email: this.state.email, password: this.state.password } }
+			}).then( val => 
+				{this.setState({ isLoggedIn: true });
+				console.log("new user successfully logged in!")}
+			).catch ( err =>
+				//if cannot create new acc (eg username alr exists), display error msg
+				{this.setState({
           message: "Sorry. Invalid username or password. Please try again."
-        });
-      }
-    });
+				});
+				console.log("Error in creating new user.", err)}
+			))
   }
 
   dbLogIn() {
@@ -85,8 +75,8 @@ class Login extends Component {
     Axios({
       method: "POST",
       url: "users/sign_in",
-      data: { user: { email: "test@test.com", password: "password" } }
-    }).then(
+      data: { user: { email: this.state.email, password: this.state.password } }
+    }).then( val =>
 			this.setState({ isLoggedIn: true })
 		)
   }
@@ -129,13 +119,13 @@ class Login extends Component {
             }}
           >
             <div className="form-group">
-              <label htmlFor="inputUsername">Username</label>
+              <label htmlFor="inputUsername">Email</label>
               <input
-                name="username"
+                name="email"
                 type="text"
                 className="form-control"
                 id="inputUsername"
-                placeholder="Enter username"
+                placeholder="Enter email"
               />
             </div>
             <div className="form-group">
