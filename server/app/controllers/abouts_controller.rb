@@ -3,8 +3,7 @@ class AboutsController < ApplicationController
 
     def index
       render :json => {
-        "id"=>current_user.id,
-        "email"=>current_user.email
+        "about"=>current_user
     }
     end
 

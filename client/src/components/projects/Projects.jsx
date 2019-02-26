@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { api } from "../functions";
 import Axios from "axios";
 
 class Projects extends Component {
@@ -43,8 +42,6 @@ class Projects extends Component {
         const projects = this.state.project_data;
         console.log("PROJECT DATA", projects);
 
-        
-
         if (this.state.project_data.length > 0) {
 
             const projectsList = projects.map ( project => {
@@ -53,7 +50,7 @@ class Projects extends Component {
                         <li key={project.id}>Title: {project.title}</li>
                         <li key={project.id}>Description: {project.description}</li>
                         <li key={project.id}>Project Link: {project.project_link}</li>
-                        <li key={project.id}>Screenshot: <img src={project.img_link} /></li>
+                        <li key={project.id}>Screenshot: <img src={project.img_link} style={{maxWidth: "200px"}} /></li><hr />
                     </div>
                 )
             })

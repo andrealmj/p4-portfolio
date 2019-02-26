@@ -1,46 +1,67 @@
 import React, { Component } from "react";
-import { api } from "../functions";
+import Axios from "axios";
 
 class About extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            about: { email: [] }
+  constructor(props) {
+    super(props);
+    this.state = {
+      about: {
+        bio: null,
+        name: null,
+        email: null,
+        phone: null,
+        everythingIsOk: false
+      }
+    };
+  }
+
+  componentDidMount() {
+    this.updateFromDb();
+  }
+
+  updateFromDb() {
+    Axios({
+      method: "GET",
+      url: "/abouts",
+      data: {
+        about: {
+          bio: this.state.bio,
+          name: this.state.name,
+          email: this.state.email,
+          phone: this.state.phone
         }
+      }
+    }).then(val => {
+      console.log(val.data.about);
+      this.setState({
+        about: val.data.about,
+        everythingIsOk: true
+      });
+    });
+  }
+
+  render() {
+    console.log(this.state.about);
+
+    if (this.state.everythingIsOk) {
+      return (
+        <div>
+          <h1>About Me:</h1>
+          <hr />
+          {this.state.about.bio}
+          <hr />
+          Name: {this.state.about.name}
+          <br />
+          E-mail: {this.state.about.email}
+          <br />
+          Phone number: {this.state.about.phone}
+          <br />
+        </div>
+      );
+    } else {
+      return <div>Loading...</div>;
     }
-
-    componentDidMount() {
-        this.updateFromDb();
-    }
-
-    updateFromDb() {
-		api("GET", "abouts").then(val => {
-			if (val.data.success === false) {
-				return;
-			} else {
-				this.setState({ about: val.data });
-			}
-		});
-	}
-
-    render() {
-
-        console.log(this.state.about);
-
-        if (this.state.about.email.length > 0) {
-            return (
-                <div>
-                    <h1>About Me:</h1>
-                    <br />
-                    E-mail: {this.state.about.email}
-                </div>
-            )
-        } else {
-            return (
-                <div>Loading...</div>
-            )
-        }
-    }
+  }
 }
 
 export default About;
