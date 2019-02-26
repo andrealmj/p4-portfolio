@@ -3,8 +3,8 @@ class ContactsController < ApplicationController
 
     def index
         render :json => {
-          "contact_data"=>current_user.contact
-      }
-      end
+          "contact_data"=>current_user
+    }
+    end
 
 end

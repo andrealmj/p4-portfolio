@@ -5,6 +5,6 @@ class ProjectsController < ApplicationController
         render :json => {
           "project_data"=>current_user.project
       }
-      end
+    end
 
 end

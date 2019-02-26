@@ -5,6 +5,6 @@ class AboutsController < ApplicationController
       render :json => {
         "about"=>current_user
     }
-    end
+  end
 
 end

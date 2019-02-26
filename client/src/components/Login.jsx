@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import { api } from "./functions";
 import Axios from "axios";
 
 class Login extends Component {
@@ -87,11 +86,11 @@ class Login extends Component {
     } else {
       return (
         <div
-          className="d-flex justify-content-center align-items-center"
+          classNameName="d-flex justify-content-center align-items-center"
           style={{ height: 100 + "vh" }}
         >
           <div
-            className="background"
+            classNameName="background"
             style={{
               position: "absolute",
               top: 0,
@@ -118,39 +117,39 @@ class Login extends Component {
               marginTop: "200px"
             }}
           >
-            <div className="form-group">
+            <div classNameName="form-group">
               <label htmlFor="inputUsername">Email</label>
               <input
                 name="email"
                 type="text"
-                className="form-control"
+                classNameName="form-control"
                 id="inputUsername"
                 placeholder="Enter email"
               />
             </div>
-            <div className="form-group">
+            <div classNameName="form-group">
               <label htmlFor="inputPassword">Password</label>
               <input
                 name="password"
                 type="password"
-                className="form-control"
+                classNameName="form-control"
                 id="inputPassword"
                 placeholder="Enter password"
               />
             </div>
-            <div className="form-check">
+            <div classNameName="form-check">
               <input
                 name="isNewAccount"
                 type="checkbox"
-                className="form-check-input"
+                classNameName="form-check-input"
                 id="checkNewAccount"
                 defaultChecked={this.state.isNewAccount}
               />
-              <label className="form-check-label" htmlFor="checkNewAccount">
+              <label classNameName="form-check-label" htmlFor="checkNewAccount">
                 New User
               </label>
             </div>
-            <button type="submit" value="Submit" className="btn btn-primary">
+            <button type="submit" value="Submit" classNameName="btn btn-primary">
               Submit
             </button>
             <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>

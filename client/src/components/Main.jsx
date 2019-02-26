@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-import { api } from "./functions";
-import axios from "axios";
+import { Switch, Route } from "react-router-dom";
 
 import Navigation from "./Navigation";
 
