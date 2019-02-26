@@ -40,19 +40,29 @@ class Projects extends Component {
     }
     
     render() {
-        console.log("PROJECT DATA", this.state.project_data);
+        const projects = this.state.project_data;
+        console.log("PROJECT DATA", projects);
+
+        
+
         if (this.state.project_data.length > 0) {
+
+            const projectsList = projects.map ( project => {
+                return (
+                    <div>
+                        <li key={project.id}>Title: {project.title}</li>
+                        <li key={project.id}>Description: {project.description}</li>
+                        <li key={project.id}>Project Link: {project.project_link}</li>
+                        <li key={project.id}>Screenshot: <img src={project.img_link} /></li>
+                    </div>
+                )
+            })
+
             return (
                 <div>
                     <h1>My Projects</h1>
-                    <br />
-                    Title: {this.state.project_data[0].title}
-                    <br />
-                    Description: {this.state.project_data[0].description}
-                    <br />
-                    Project link: {this.state.project_data[0].project_link}
-                    <br />
-                    Screenshot: {this.state.project_data[0].img_link}
+                    
+                    <ul>{projectsList}</ul>
                 </div>
             )
         } else {
