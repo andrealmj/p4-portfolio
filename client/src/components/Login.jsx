@@ -86,11 +86,11 @@ class Login extends Component {
     } else {
       return (
         <div
-          classNameName="d-flex justify-content-center align-items-center"
+          className="d-flex justify-content-center align-items-center"
           style={{ height: 100 + "vh" }}
         >
           <div
-            classNameName="background"
+            className="background"
             style={{
               position: "absolute",
               top: 0,
@@ -117,39 +117,39 @@ class Login extends Component {
               marginTop: "200px"
             }}
           >
-            <div classNameName="form-group">
+            <div className="form-group">
               <label htmlFor="inputUsername">Email</label>
               <input
                 name="email"
                 type="text"
-                classNameName="form-control"
+                className="form-control"
                 id="inputUsername"
                 placeholder="Enter email"
               />
             </div>
-            <div classNameName="form-group">
+            <div className="form-group">
               <label htmlFor="inputPassword">Password</label>
               <input
                 name="password"
                 type="password"
-                classNameName="form-control"
+                className="form-control"
                 id="inputPassword"
                 placeholder="Enter password"
               />
             </div>
-            <div classNameName="form-check">
+            <div className="form-check">
               <input
                 name="isNewAccount"
                 type="checkbox"
-                classNameName="form-check-input"
+                className="form-check-input"
                 id="checkNewAccount"
                 defaultChecked={this.state.isNewAccount}
               />
-              <label classNameName="form-check-label" htmlFor="checkNewAccount">
+              <label className="form-check-label" htmlFor="checkNewAccount">
                 New User
               </label>
             </div>
-            <button type="submit" value="Submit" classNameName="btn btn-primary">
+            <button type="submit" value="Submit" className="btn btn-primary">
               Submit
             </button>
             <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>

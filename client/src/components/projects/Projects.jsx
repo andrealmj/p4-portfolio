@@ -46,11 +46,11 @@ class Projects extends Component {
 
             const projectsList = projects.map ( project => {
                 return (
-                    <div>
-                        <li key={project.id}>Title: {project.title}</li>
-                        <li key={project.id}>Description: {project.description}</li>
-                        <li key={project.id}>Project Link: {project.project_link}</li>
-                        <li key={project.id}>Screenshot: <img src={project.img_link} style={{maxWidth: "200px"}} /></li><hr />
+                    <div key={project.id}>
+                        <li>Title: {project.title}</li>
+                        <li>Description: {project.description}</li>
+                        <li>Project Link: {project.project_link}</li>
+                        <li>Screenshot: <img src={project.img_link} style={{maxWidth: "200px"}} /></li><hr />
                     </div>
                 )
             })

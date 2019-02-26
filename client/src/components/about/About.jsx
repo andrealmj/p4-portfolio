@@ -47,7 +47,9 @@ class About extends Component {
       return (
         <div>
           <h1>About Me:</h1>
-          <hr />
+          <br />
+          <h3>ALLOW IMAGE UPLOAD HERE !!! Cloudinary</h3>
+          <br />
           {this.state.about.bio}
           <hr />
           Name: {this.state.about.name}

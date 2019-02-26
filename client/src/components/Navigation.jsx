@@ -18,7 +18,6 @@ class Navigation extends Component {
       url: "/users/sign_out"
     }).then(res => {
       if (res.status === 204) {
-        localStorage.clear();
         this.setState({ doRedirect: true });
       }
     });
