@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { api } from "../functions";
+import Axios from "axios";
 
 class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            projects: { 
+            project_data: { 
                 title: null,
                 description: null,
                 project_link: null,
@@ -19,29 +20,47 @@ class Projects extends Component {
     }
 
     updateFromDb() {
-		api("GET", "projects").then(val => {
-			if (val.data.success === false) {
-				return;
-			} else {
-				this.setState({ projects: val.data });
-			}
-		});
+            Axios({
+                method: "GET",
+                url: "/projects",
+                data: { 
+                    project_data: { 
+                        title: this.state.title, 
+                        description: this.state.description,
+                        project_link: this.state.project_link,
+                        img_link: this.state.img_link 
+                    } 
+                }
+            }).then(val => 
+                {console.log(val.data.project_data);
+                this.setState({ 
+                    project_data: val.data.project_data
+                })}
+                )
     }
     
     render() {
-        return (
-            <div>
-                <h1>My Projects</h1>
-                <br />
-                Title: {this.state.projects.title}
-                <br />
-                Description: {this.state.projects.description}
-                <br />
-                Project link: {this.state.projects.project_link}
-                <br />
-                Screenshot: {this.state.projects.img_link}
-            </div>
-        )
+        console.log("PROJECT DATA", this.state.project_data);
+        if (this.state.project_data.length > 0) {
+            return (
+                <div>
+                    <h1>My Projects</h1>
+                    <br />
+                    Title: {this.state.project_data[0].title}
+                    <br />
+                    Description: {this.state.project_data[0].description}
+                    <br />
+                    Project link: {this.state.project_data[0].project_link}
+                    <br />
+                    Screenshot: {this.state.project_data[0].img_link}
+                </div>
+            )
+        } else {
+            return (
+                <div>Loading...</div>
+            )
+        }
+        
     }
 }
 
