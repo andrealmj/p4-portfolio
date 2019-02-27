@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
+import Axios from "axios";
 
 import Navigation from "./Navigation";
 
@@ -10,25 +11,49 @@ import About from "./about/About";
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
 
+
 class Main extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            doRedirect: false
+        };
+    }
+
+    componentDidMount() {
+        Axios({
+            method: "GET",
+            url: "/users/validate"
+        }).then( res => {
+            if (!res.data.success) {
+                this.setState({ doRedirect: true });
+            }
+        })
+    }
+
     render() {
-        return (
-            <div>
-                <Navigation />
-
-                <Switch>
-                    <Route path="/login" component={Login} />
-
-                    <Route exact path="/" component={Home} />
-                    <Route path="/abouts" component={About} />
-                    <Route path="/contacts" component={Contact} />
-                    <Route path="/projects" component={Projects} />
-
-                    <Route component={Error} />
-
-                </Switch>
-            </div>
-        )
+        if (this.state.doRedirect) {
+            return <Redirect to="/login" />
+        } else {
+            return (
+                <div>
+                    <Navigation />
+    
+                    <Switch>
+                        <Route path="/login" component={Login} />
+    
+                        <Route exact path="/" component={Home} />
+                        <Route path="/abouts" component={About} />
+                        <Route path="/contacts" component={Contact} />
+                        <Route path="/projects" component={Projects} />
+    
+                        <Route component={Error} />
+    
+                    </Switch>
+                </div>
+            )
+        }
+        
     }
 }
 

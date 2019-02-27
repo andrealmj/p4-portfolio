@@ -16,6 +16,16 @@ class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount() {
+    Axios({
+      method: "GET",
+      url: "/users/validate"
+    }).then( res => {
+      if (res.data.success) {
+        this.setState({ isLoggedIn: true });
+      }
+    })
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -76,7 +86,8 @@ class Login extends Component {
       url: "users/sign_in",
       data: { user: { email: this.state.email, password: this.state.password } }
     }).then( val =>
-			this.setState({ isLoggedIn: true })
+      {this.setState({ isLoggedIn: true });
+      console.log("logged in successfully")}
 		)
   }
 
@@ -98,9 +109,9 @@ class Login extends Component {
               width: "100%",
               height: "100%",
               zIndex: -2,
-              backgroundImage: "url(./assets/logo/logo-fitter-top.png)",
+              backgroundImage: "url(./assets/logo/logo-cropped.png)",
               backgroundPosition: "center top",
-              backgroundColor: "#C5E7F1",
+              backgroundColor: "#F4F4F4",
               backgroundRepeat: "no-repeat",
               backgroundSize: "300px"
             }}
@@ -110,10 +121,10 @@ class Login extends Component {
             onChange={this.handleChange}
             style={{
               width: "350px",
-              border: "2px solid #2F9476",
+              border: "2px solid black",
               borderRadius: "10px",
               padding: "15px",
-              backgroundColor: "rgba(155, 229, 194, 0.5)",
+              backgroundColor: "rgba(253, 209, 1, 0.5)",
               marginTop: "200px"
             }}
           >
@@ -149,7 +160,7 @@ class Login extends Component {
                 New User
               </label>
             </div>
-            <button type="submit" value="Submit" className="btn btn-primary">
+            <button type="submit" value="Submit" className="btn btn-outline-dark float-right">
               Submit
             </button>
             <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
@@ -159,7 +170,7 @@ class Login extends Component {
 
           <p
             style={{
-              color: "white",
+              color: "black",
               fontSize: "12px",
               position: "absolute",
               bottom: "5px"
@@ -169,7 +180,7 @@ class Login extends Component {
             <a
               href="https://www.designevo.com/en/"
               title="Free Online Logo Maker"
-              style={{ color: "white" }}
+              style={{ color: "black" }}
             >
               DesignEvo
             </a>

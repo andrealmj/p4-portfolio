@@ -29,7 +29,7 @@ class Navigation extends Component {
     } else {
       return (
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light sticky">
+          <nav className="navbar navbar-expand-lg navbar-light sticky" style={{backgroundColor: "#FDD101"}}>
             <NavLink className="navbar-brand" to="/">
               Portfolio Builder
             </NavLink>
