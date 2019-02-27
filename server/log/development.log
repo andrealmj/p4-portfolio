@@ -8734,3 +8734,13 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 15:24:56 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.8ms)
+
+

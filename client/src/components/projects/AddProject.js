@@ -5,10 +5,10 @@ class AddProject extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: null,
-            description: null,
-            project_link: null,
-            img_link: null,
+            title: "",
+            description: "",
+            project_link: "",
+            img_link: "",
             titleMessage: "",
             descriptionMessage: "",
             projectLinkMessage: "",
@@ -30,22 +30,22 @@ class AddProject extends Component {
 
         let everythingIsOk = true;
 
-        if (this.state.title === null) {
+        if (this.state.title === "") {
             this.setState({ titleMessage: "Please give your project a title."});
             everythingIsOk = false;
         }
 
-        if (this.state.description === null) {
+        if (this.state.description === "") {
             this.setState({ descriptionMessage: "Please give your project a description."});
             everythingIsOk = false;
         }
 
-        if (this.state.project_link === null) {
+        if (this.state.project_link === "") {
             this.setState({ projectLinkMessage: "Please provide a link to your project."});
             everythingIsOk = false;
         }
 
-        if (this.state.img_link === null) {
+        if (this.state.img_link === "") {
             this.setState({ imgLinkMessage: "Please provide a screenshot link."});
             everythingIsOk = false;
         }
