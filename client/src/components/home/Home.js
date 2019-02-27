@@ -38,8 +38,8 @@ class Home extends Component {
   render() {
     if (this.state.everythingIsOk) {
       return (
-        <div>
-          Welcome to {this.state.about.name}'s portfolio page.
+        <div style={{margin: "40px"}}>
+          <h5>Welcome to {this.state.about.name}'s portfolio page.</h5>
         </div>
       );
     } else {

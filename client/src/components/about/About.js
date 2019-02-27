@@ -48,13 +48,11 @@ class About extends Component {
 
     if (this.state.everythingIsOk) {
       return (
-        <div>
+        <div style={{margin: "40px"}}>
           <div className="about">
-            <h1>About Me:</h1>
+            <h5>About Me:</h5>
             <br />
-            <h3>ALLOW IMAGE UPLOAD HERE !!! Cloudinary</h3>
-            <br />
-            {this.state.about.bio}
+            <cite>{this.state.about.bio}</cite>
             <hr />
 
             ID: {this.state.about.id}
@@ -73,7 +71,7 @@ class About extends Component {
           {/* Button Trigger Modal */}
           <button
             type="button"
-            className="btn btn-primary"
+            className="btn btn-outline-dark"
             data-toggle="modal"
             data-target="#exampleModalScrollable"
           >
@@ -114,8 +112,8 @@ class About extends Component {
       );
     } else {
       return (
-        <div>
-          <h1>About Me:</h1>
+        <div style={{margin: "40px"}}>
+          <h5>About Me:</h5>
           <br />
           Loading...
         </div>

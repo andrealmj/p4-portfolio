@@ -42,12 +42,12 @@ class EditAbout extends Component {
         let everythingIsOk = true;
 
         if (this.state.name === "") {
-            this.setState({ nameMessage: "Please enter your name!" });
+            this.setState({ nameMessage: "Please enter your name." });
             everythingIsOk = false;
         }
 
         if (this.state.bio === "") {
-            this.setState({ bioMessage: "Please tell us about yourself." });
+            this.setState({ bioMessage: "Please describe yourself." });
             everythingIsOk = false;
         }
         if ( this.state.email === "" || !this.state.email.includes("@") ) {
@@ -88,36 +88,42 @@ class EditAbout extends Component {
         console.log(this.props.existingAbout);
         if (this.props.existingAbout) {
             return (
-                <div id="about">
+                <div id="editAbout">
                     <form onSubmit={this.handleAddItem} onChange={this.handleChange}>
                     
-                    Name: <input name="name" type="text" placeholder={this.props.existingAbout.name}/>
-                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
-                        {this.state.nameMessage}
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="form-control" id="name" placeholder={this.props.existingAbout.name} />
+                        <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                            {this.state.nameMessage}
+                        </div>
                     </div>
-                    <br />
     
                     <div className="form-group blue-border-focus">
-                        <label for="exampleFormControlTextarea5">About me:</label>
-                        <textarea className="form-control" id="exampleFormControlTextarea5" rows="3" name="bio" placeholder={this.props.existingAbout.bio}></textarea>
+                        <label for="aboutMe">About Me</label>
+                        <textarea className="form-control" id="aboutMe" rows="3" name="bio" placeholder={this.props.existingAbout.bio}></textarea>
+                        <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                            {this.state.bioMessage}
+                        </div>
                     </div>
-                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
-                        {this.state.bioMessage}
+                                        
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input name="email" type="text" class="form-control" id="email" placeholder={this.props.existingAbout.email} />
+                        <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                            {this.state.emailMessage}
+                        </div>
                     </div>
-                    <br />
     
-                    Email: <input name="email" type="text" placeholder={this.props.existingAbout.email}/>
-                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
-                        {this.state.emailMessage}
-                    </div>
-                    <br />
-    
-                    Phone: <input name="phone" type="text" placeholder={this.props.existingAbout.phone}/>
-                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
-                        {this.state.phoneMessage}
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input name="phone" type="text" class="form-control" id="phone" placeholder={this.props.existingAbout.phone} />
+                        <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                            {this.state.phoneMessage}
+                        </div>
                     </div>
                     
-                    <button inputType="submit" className="btn btn-primary">Edit</button>
+                    <button inputType="submit" className="btn btn-outline-dark float-right">Edit</button>
                     </form>
                 </div>
             )

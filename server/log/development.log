@@ -21933,3 +21933,1664 @@ Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 7.9ms)
 Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 12.0ms)
 
 
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:00:22 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:00:23 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:00:24 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (2.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 27ms (Views: 9.0ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:00:25 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 17ms (Views: 1.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:00:26 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:00:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 12ms (Views: 2.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:00:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:02:38 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:02:38 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:02:49 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:02:49 +0800
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:02:56 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:02:56 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 2.7ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:03:00 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:03:00 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:03:03 +0800
+Processing by UsersController#validate as HTML
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:03:03 +0800
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:04:43 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:04:43 +0800
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:04:48 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:05:16 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:05:16 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:05:49 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:05:49 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:06:22 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:06:22 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:06:32 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:06:32 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:06:45 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:06:46 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:17:37 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:17:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 7.1ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:17:54 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:17:54 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:18:15 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:18:15 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:18:23 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:18:23 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:18:42 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:18:42 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:19:18 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:19:18 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:19:33 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:19:46 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:19:46 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mProject Load (3.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:21:03 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:21:03 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:21:16 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:21:16 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+
+
+  [1m[36mProject Load (2.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 14ms (Views: 3.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:21:32 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:21:32 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mProject Load (5.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 15ms (Views: 4.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:21:58 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:21:58 +0800
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 1.3ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:21:59 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:22:01 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 18ms (Views: 8.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:22:07 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:22:09 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:22:11 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:22:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:22:37 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:22:39 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:22:39 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:06 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:23:06 +0800
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:22 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:23:23 +0800
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:33 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:35 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:23:39 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 14ms (Views: 5.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:23:48 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:54 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 16ms (Views: 1.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:57 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:23:58 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:24:13 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:24:13 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:24:23 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:24:23 +0800
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:24:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:24:37 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:25:27 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:25:27 +0800
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:26:01 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:26:01 +0800
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:32:20 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:32:20 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 6.6ms)
+
+
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:33:38 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:33:38 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:35:14 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:35:14 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:35:28 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:35:28 +0800
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/abouts" for 127.0.0.1 at 2019-02-28 04:36:33 +0800
+Processing by AboutsController#create as HTML
+  Parameters: {"bio"=>"Hi I'm a test account!! This is my DESCRIPTION. Here, I should describe myself. Blablablbalbalblablablabla. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name"=>"TestTest", "email"=>"test@test.com", "phone"=>"81119222", "about"=>{"bio"=>"Hi I'm a test account!! This is my DESCRIPTION. Here, I should describe myself. Blablablbalbalblablablabla. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name"=>"TestTest", "email"=>"test@test.com", "phone"=>"81119222"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/abouts_controller.rb:15
+  [1m[36mUser Update (1.5ms)[0m  [1m[33mUPDATE "users" SET "name" = $1, "bio" = $2, "phone" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "TestTest"], ["bio", "Hi I'm a test account!! This is my DESCRIPTION. Here, I should describe myself. Blablablbalbalblablablabla. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["phone", "81119222"], ["updated_at", "2019-02-27 20:36:33.365434"], ["id", 2]]
+  ↳ app/controllers/abouts_controller.rb:15
+  [1m[35m (28.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/abouts_controller.rb:15
+No template found for AboutsController#create, rendering head :no_content
+Completed 204 No Content in 105ms (ActiveRecord: 32.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:36:33 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:36:33 +0800
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by UsersController#validate as HTML
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:37:15 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:37:15 +0800
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:38:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:38:37 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/abouts" for 127.0.0.1 at 2019-02-28 04:39:23 +0800
+Processing by AboutsController#create as HTML
+  Parameters: {"bio"=>"Hi I'm a test account!! This is my DESCRIPTION. Here, I should describe myself. \n\nBlablablbalbalblablablabla. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name"=>"Test", "email"=>"test@test.com", "phone"=>"81729384", "about"=>{"bio"=>"Hi I'm a test account!! This is my DESCRIPTION. Here, I should describe myself. \n\nBlablablbalbalblablablabla. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name"=>"Test", "email"=>"test@test.com", "phone"=>"81729384"}}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/abouts_controller.rb:15
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "name" = $1, "bio" = $2, "phone" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Test"], ["bio", "Hi I'm a test account!! This is my DESCRIPTION. Here, I should describe myself. \n\nBlablablbalbalblablablabla. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["phone", "81729384"], ["updated_at", "2019-02-27 20:39:23.099882"], ["id", 2]]
+  ↳ app/controllers/abouts_controller.rb:15
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/abouts_controller.rb:15
+No template found for AboutsController#create, rendering head :no_content
+Completed 204 No Content in 96ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:39:23 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:39:23 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:39:29 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:39:29 +0800
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:39:44 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:39:44 +0800
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:39:55 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:39:55 +0800
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:40:16 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:40:16 +0800
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:40:29 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:40:29 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:41:18 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:41:38 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 12ms (Views: 4.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:41:45 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 13ms (Views: 2.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:41:47 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:42:14 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:42:32 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:42:32 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:42:35 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:42:35 +0800
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:45:31 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:45:31 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:46:30 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:46:30 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:47:12 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:47:12 +0800
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:47:27 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:47:27 +0800
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:47:39 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 15ms (Views: 4.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:48:47 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:48:47 +0800
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mProject Load (6.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 16ms (Views: 4.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:49:04 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:49:04 +0800
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 11ms (Views: 4.2ms | ActiveRecord: 3.5ms)
+
+
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 5.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-28 04:49:41 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 12ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:49:42 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-28 04:49:48 +0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"m@m.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"m@m.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "m@m.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "m@m.com"], ["encrypted_password", "$2a$11$5eji6Bcsu7N5nFgZO2dLSOUq07AYlC0dW.cpe/S..5sCov4r19hhO"], ["created_at", "2019-02-27 20:49:49.005782"], ["updated_at", "2019-02-27 20:49:49.005782"]]
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:7
+Completed 200 OK in 135ms (Views: 0.9ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-28 04:49:49 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"m@m.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"m@m.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "m@m.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 125ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:49:49 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:49:49 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:49:51 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/abouts" for 127.0.0.1 at 2019-02-28 04:50:18 +0800
+Processing by AboutsController#create as HTML
+  Parameters: {"bio"=>"I HAD A LITTLE LAMB.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name"=>"Mary", "email"=>"m@m.com", "phone"=>"91880999", "about"=>{"bio"=>"I HAD A LITTLE LAMB.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "name"=>"Mary", "email"=>"m@m.com", "phone"=>"91880999"}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/abouts_controller.rb:15
+  [1m[36mUser Update (2.1ms)[0m  [1m[33mUPDATE "users" SET "name" = $1, "bio" = $2, "phone" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Mary"], ["bio", "I HAD A LITTLE LAMB.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["phone", "91880999"], ["updated_at", "2019-02-27 20:50:18.150636"], ["id", 7]]
+  ↳ app/controllers/abouts_controller.rb:15
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/abouts_controller.rb:15
+No template found for AboutsController#create, rendering head :no_content
+Completed 204 No Content in 49ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:50:18 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:50:18 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:50:25 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:50:27 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:50:28 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:50:42 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 14ms (Views: 1.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:50:45 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:50:56 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:50:56 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:53:00 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:53:00 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:54:12 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:54:12 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:54:14 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:54:30 +0800
+Processing by AboutsController#index as HTML
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:54:30 +0800
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:54:44 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:54:44 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:54:49 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (3.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 17ms (Views: 2.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:55:45 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:55:45 +0800
+Processing by UsersController#validate as HTML
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 04:55:47 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:55:49 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 13ms (Views: 3.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2019-02-28 04:56:51 +0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"title"=>"Taking care of my lambs", "description"=>"I care for my lambs a lot. I feed them, shower them, brush them, rear them, shower them with love.", "project_link"=>"maryhadalittlelamb.com", "img_link"=>"https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web05/2012/9/13/16/enhanced-buzz-29702-1347566659-3.jpg?downsize=700:*&output-format=auto&output-quality=auto", "project"=>{"title"=>"Taking care of my lambs", "description"=>"I care for my lambs a lot. I feed them, shower them, brush them, rear them, shower them with love.", "project_link"=>"maryhadalittlelamb.com", "img_link"=>"https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web05/2012/9/13/16/enhanced-buzz-29702-1347566659-3.jpg?downsize=700:*&output-format=auto&output-quality=auto"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mProject Create (3.1ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "project_link", "img_link", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Taking care of my lambs"], ["description", "I care for my lambs a lot. I feed them, shower them, brush them, rear them, shower them with love."], ["project_link", "maryhadalittlelamb.com"], ["img_link", "https://img.buzzfeed.com/buzzfeed-static/static/enhanced/web05/2012/9/13/16/enhanced-buzz-29702-1347566659-3.jpg?downsize=700:*&output-format=auto&output-quality=auto"], ["created_at", "2019-02-27 20:56:52.022632"], ["updated_at", "2019-02-27 20:56:52.022632"], ["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[35m (28.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:11
+No template found for ProjectsController#create, rendering head :no_content
+Completed 204 No Content in 99ms (ActiveRecord: 34.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:56:52 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:56:52 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Processing by UsersController#validate as HTML
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:57:19 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:57:19 +0800
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:57:23 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:57:23 +0800
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mProject Load (3.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 4.9ms)
+
+
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:58:01 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:58:01 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mProject Load (3.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 14ms (Views: 3.4ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 04:59:08 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 04:59:08 +0800
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 11ms (Views: 2.0ms | ActiveRecord: 5.4ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:00:07 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:00:07 +0800
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:00:28 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:00:28 +0800
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 1.9ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:02:44 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:02:44 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:03:30 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:03:30 +0800
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/projects/edit" for 127.0.0.1 at 2019-02-28 05:04:09 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"22", "title"=>"Takin care of mi lambz", "description"=>"i love em", "project_link"=>"mary.com", "img_link"=>"https://i.etsystatic.com/11441782/r/il/4dfc12/1017600753/il_570xN.1017600753_ngyv.jpg", "project"=>{"id"=>"22", "title"=>"Takin care of mi lambz", "description"=>"i love em", "project_link"=>"mary.com", "img_link"=>"https://i.etsystatic.com/11441782/r/il/4dfc12/1017600753/il_570xN.1017600753_ngyv.jpg"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND "projects"."id" = $2 LIMIT $3[0m  [["user_id", 7], ["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:21
+  [1m[36mProject Update (0.7ms)[0m  [1m[33mUPDATE "projects" SET "title" = $1, "description" = $2, "project_link" = $3, "img_link" = $4, "updated_at" = $5 WHERE "projects"."id" = $6[0m  [["title", "Takin care of mi lambz"], ["description", "i love em"], ["project_link", "mary.com"], ["img_link", "https://i.etsystatic.com/11441782/r/il/4dfc12/1017600753/il_570xN.1017600753_ngyv.jpg"], ["updated_at", "2019-02-27 21:04:09.430859"], ["id", 22]]
+  ↳ app/controllers/projects_controller.rb:21
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:21
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:23
+Completed 200 OK in 28ms (Views: 3.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:04:09 +0800
+Processing by UsersController#validate as HTML
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:04:09 +0800
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:04:22 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:04:22 +0800
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mProject Load (3.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 2.7ms | ActiveRecord: 4.9ms)
+
+
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2019-02-28 05:04:48 +0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"title"=>"123", "description"=>"aldenla", "project_link"=>"nub.com", "img_link"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAD/CAMAAAB2B+IJAAAAkFBMVEX////i4uLl5eX09PTp6env7+/6+voAAADx8fH39/fr6+vg4ODJycna2trOzs7IyMjU1NS6urp1dXW4uLiamprCwsKnp6d9fX2zs7OGhoahoaGOjo5wcHCmpqatra2Xl5dfX19aWlpnZ2dNTU1VVVVDQ0NHR0cnJyczMzMMDAw8PDwlJSUeHh4WFhYuLi43NzdftJGKAAAY1UlEQVR4nO1dC2ObLBdGQFEQxCheE02TdJdu7/b//93HRROTJmnSdlu3z6cN6pHb4QAqHA4AzJgxY8aMGTP+cXCyBZh8PiVDgkBF9pdEHG4tau2kBIgEKAmIN5ApCU/iQCR6//yeBydEZ1dzISQALJQMAEz1jwQg/QqA1FQgAmIOQcxMiGVp8qzA1zwiheECigkXJgALBAgliIgvLqb73lxs5XLzDZCHL0tAvi+/ZoAow0XTLb6DL9vHHdh93houEFmQZuRCEUm+5eS/kOCKrL/suXjaftoC8unx25a0AXn89PV3cdG0pPsP+GL5ExAOmgdoKhImi3L3HYSiJJGuGFYWMNmWey7+A19SU9GI/73n5rbjAoma6Gh0HCvNTQhI/Ju44OSb/A+QJn8CBOsSL2sw1ChN7buvSHNlsslIWlouasfFj9TkkdCvdddBw4VpBaTVrYl4nuZiB3TbIslv4gKQUugCr7bfAdG5Wdv2OrRu0q0J+LxemtadEPV1abj4vlm3CQGP2/Dbg65R7dPKMIDJerPmpNABCNNcNJ8A2ZW6MH4HwhQo6Csgc5iCTOem+M+QoywAUAGewwwEjYx9TUtXmqLbb5qmsQ7h5SHLUYpAmlMTQpMzTdEBMoQywGKQern/W5h4hgXJ/kzC7wqI/3QO3heiMr19wN1VAlZKd0IBNqe6dnXGR6Abver+YB5fRr7O27pv2wdQL8q2BLuHumqLcgXqdhm1ddP1mlqDvCi6Xv3pzF4Ex0xJPxMZSBMmKyATmQrJO5DyEiQZV7HMZKtFJkX5p/P6NgRHhxkzZsyY8Y+gAsAL/vrOPW/yvM3TP52NN4JB6Pnwt41M/HacjsJ8dNRMhVGHfIpECPKs8qNQsxBiP1CF5H86d7dCNf0y78sm65slqPN+13YFyP1YglXa5386d7cCBchHIQ2jEFGAI4RRiID5cA5CGPxtFevvh8DgvhYguR3p/FjosvS+Dxv9Bf7xuMBCCnbPUyNh7K9/4v97CFNlYFuVGjG5j8aTD/2CwISGXPfm/FMrzZWoJvebkY32V6SedGakwnvz6KWbOWK2rSvqaHByH46vmsoD7484Bl0K1JvH4eHkMI6FTvOLR5bwu3Phezhb+1XKqzrNaIfhfeDjiZK+yBN94ie9xGHvYqKyqMYofdVzyEVCw/auZLwbXhoYZCShi26jvDqOtxziIQWq4VPfx4zzy0mYfAv9w126JiTWl0/kP94Q0pt4cEmIzrGNkf34+o3BWPT6Zj7QoLqFDfYyFx54shV5FYBaemtppkct8nqxWW8e1stFfaU1wuEHpEq5Pa30T5jyq3S9UXYKsjGlGWSmlmGUS1u4jZ292F6OGe2nN26of94q3ewUZrUHuYc3upBc+eBKetSH3NfyEI6w0CiX5eiWGwphDN0PYs5XWIsGC1NdKoFFL3Ux5ngQGMSxqVsx5vqmCeQZYjlWrbR0qBd1WS70PdyYUlwnN8oiqWK1wtgEpM02wVDamLEwByYxx+4UC9/UsYPrazKOMfRj1wTIWjONGakp3XyWGFcU+j9++jqkiRFL0lLj39/80NeOxvuBCZyWtc5+XWsu9M8bkvNNGrdwwXAi+n1jq5N9bbQlrLmoFEwPhKnr5IDJF2q5+KaPAnpkSXFNuK3z9IH4Y3ycLKzsqL15iliXjce1I/TPNsRDQrfUKJDlZ6eIbG0PfMA5ce0CH8jOHTrOcfZdHi7Z2K3wySvW+M7IzvU52CXmIg2j44Ru4UIW9AwPlUn0C4mA51IPE/MYrkhlbwoAAyzQ83CvAxIFABviA2lKbEsQ8NNUc6B76lu5OIuFmRgG3BSKK05udQuQfUkqiadflKqHd3uXpSbznhaFmUYDHBldkhTwQixvVLN47WNUifo9J+2QFvYpjRfq1omoi1zIFwbYbqyxN4KqM+oUtydxnoto2y9fm6E/gfNcBKL6q8Y6L9Wo36W99D642C4C8G4d6a/HhXZRSMyqpOMyrdK/QG/igixoAKAHWRhC/64RkT+EX/Hx+Pvxflw0bryj1Y/3eByZziajB8uh+0/6d0tyDxZ/WWDv1Uj2ZzDPoD7gVr+Gqh46WtfB8T4upfUP0x6exnIdN33rNW8phMnjNXHDu51+HcKjCPjktaIJnH88Hd25BTdUF4Zr9npRTGXR23LHC/2JktZOvLDID7LYiEEW9Z2yv0kWb3q+TWQRu77MPPPDMU42yUE2+A/vTfAWWdCH6oV6Cq/c17IY7kIl7GGlRYtHEfBDu4Ar6Pzj5lx8VxK5SRbLlwYc5ZmvqBHQznhYCFdmKbI62g588pVTDe2Cnh2+k5fzessXa9ouz9XTQ9HAtoB7Ajy5qet559oG1B/o5tDorkgUgz+VHWSRcyeL8eZRcXciqfapHJK7XRbnv3Zsh0NtMTP7QuVK1dXpQwnrsuXDd/RwlLrI/TFhb/L2IgZZ+GdyZSK035HmxIfg6G30lnbBNpvnsoBZiU1RHqSAN7aoS2jIhyfMoV3s28dUWNNSh4N/77kocK3bj9CNCbbcg4luOPjnoee8SRbluc/CyNZsOSnK1H5lp4ebwWGk4nZc8J9oOdrcmvi58eQeKr7L4otgtK18/AzU0ig9UHx6IBuXit7XDn0e9gou+TeR28QOJ8a3t9AHeoMszBBH8CoI9cqAtwMWJombhDxjxowZM2bMmDFjxoz/S8TeXzVPdR6y/4BKn3cDYv/XzlIFw8CD/Ujcj1VM0xw/HxHDH3ZyxlsVRdG1a/O9Th/qrjBYTWeixwF22bflcn1Fven3ILGjMSd6Fm7MBKbmiDN2RHXg2ZT28owfWpQTLCYjAcF7TPsrCVIBTma1x/zuNdD2VyMwm/p8eaQIbpbL5Xo5OJvpiG/NnnzDVfCgC5Q/jfV2M5neaK6qDoQeTjd+K2DRJgIOA6MxpDKW5spXCmJp7wxX4zAdFSmDTHhUJtqnDmJ9JHsYAux+Pmo8URsp85iXeMw5LIaHIb+yLz2uvaQPHOK2HGY81E4epjy2dpj3Ul/AECIiWKoFp0uOENLXCCVdtyWVvpQ7sgOFPo8iTeY78iVAyJyicPmZeBFXVfOTKE0xYREKtnWaNmmWpfUuMCHsWJKNE/GIR5H15pxIohG6E3FegI6J2fNouBqSQ9AeLo2qseBzAiJKqyjYiAjplHS4uMsrEMgoSjsIglafB42+Ug0E5qbxAmsJdKaSqk1NYjac5qIRQcCDKArEKvAjR3VuwIKKyS5AEeAugAtig7WEeSZdUgX6nEaRLPSPNJqhsMfaByBbYNi9xEWTbTYcyyWGgu31F2WosFGQ9XlstF8h5Jk5YVbTNLG6g9AcYip9hQ/qd9Ao97koBC0SaO/hVLu03YaNIiudzDbDEPMYG3/ShqL9T6kTx+q/DNP8i65Wqxjj+FthNAptdP6TUdK7qDfIiiqpOjzq9DolTeg/El+ngHsSY/pIdAS5jm9FrF6vjVaS2un+fX/091xgPzbqvzZjEqep1Q+kX38ad9EZ7Umd/2zpQbohHt4rfep0ao8bLjaagbzUntJEl9ZG7mOm6wJf4yIQrNFVwMFfV/Yc1FsQyShQX7g+/wR0DQmiQH6O9z7RFxNK310udc2KAmacZAujoF9rQpA9AZVwe0vaQMEY1J6w0AR2P3MJ7B3r35wHJiF7NcLjzt+l1t1VPPQdQlm7E9TGoa//qhVy5775Vz3yR5+sxJYa1tIcxTLSoVYV8sPSEFCrQoRdvGPsU4QuMHJJhyaIjjOxURmavu+Io/8kNVcXmND9fNe/g47Ktn7NWwiShTtxZVwujFs9gClxwHWFuz+q/BGShTtRRgu4bu1LTdzWDkdTpdf15P+sCst7TUjMijgfBzMXHwf/NBfjdKbp4KJ9TzLt7sbz9/lwHmLzj1KZPuSiq90Zfzb7b9/te6tKA9USezAf1Wrkp4NqAn4wejdM+zyrV3MLJspY3Cmg4KXOjhy+Lzxci0OGMpOJi9qXF2QhhkUK3eFcY7o6vYlc6OTVC+8nSfvDV5157NH9asFuInuXiYtv5uE5INUhc4RlFKK0Qo7qL6K9j2iBtStD1Cl0NoqXIQ+nJh0TqX45C716SCVq+SRDhUnmIhdn8xCpzESFeB7p89RFi3A94aKFSN9HUXaFi8jeimwoFA0EFCBL04H3eWSF46I1H3zdyEUf7n1Ehcnoxa+kC3Tu6klgpHvQupoqK9r3OKhfga5Y2ctt7Kkd/+FmpMUuajPvR7I7GopAw7BQrttwuBqp3SRqG/xijTpp3WPz5U73zurLiXRov1MFOdg4rTmYxpNOAY6OdfHShHTtH/b6HJcKemyje4yuxhN1SU+4Fo3XJs5RJdK29THm1o5bXPq+OOFubL/D0v+wOpxryRQTn92gTSQmrdsuso0tgb+s2PiKUagbZVGOOrxuyEb20IPFOHzDJoqjTmtVy6Jx3aGVQrLS3nNDgFX6YgecnNPyuo4bZTGWD3IPs8CMfYX7Xnr6OYUH73Y4DAQ2frtAzRHQy09DHTi+0ybHjbK4XjhntebsRdPe/+xLnHrdPbhRFnfiULVfYQ8UHi9FvAUXe9o3Qbzs5WrgewX4F6ximTFjxowZM2bMmDFjxlvxL6xSaWXxD7DReB9NcY7vNmVbpPIW618jfrHe3CugP9AjKFXfl8vdWnPUd+qegm5yg8aOhTJ3kefHmy3sP55lXinpvdc+JEd1ehhmgEOCoSfS5o5RPGlVFxZ2kl09iEF14Gh2oBzHtziP0y5fLI21s82y7ovq9dMIoFMgigAzo5O6YPCUGW96cRMGr+w42FEEODmiDjWXRZAn6eutKIoU1AJkZmBVys2PaQr3czEUwtQ2FjgZksX0iEqDycUrh2qgR/OlXyhZNHWKk6rJ8DOjY+PhAuR4wnofl6XRsqJqWWHtOANmEFcbMXrCuNkwyFgnaWapVi3rJEH4fGWooXqXlpdzrAiji3QjWS8hlqy7mwtz1xphY3lOPhWaKfqZ7CQm5IFDho0u1Y+NyYP1rcjTAkPOq0pTvQtcqMwgzSYHZ9ztkiyirdX8rQFYmIpDdlNpTy1RXhbn3kcfIt+eclMzuCm5xHRwzPZDla2YETQXKFDSUcexUWhbyFDYXWrQpJPD1VkY1qrNRmFeYWjKxP/6iV6QBV4tLDbWzODgUjgxNAg9VsfGSCFWNdbVqNVlvpDGYGBjBCytPhzujcIb59hz1IMscNUkC1cT7HrjYdUxHS6uyYLFFS/UaEZSp+/kjq3lQOMyD9P4YGWQUmnNDDpXWMU+TJ0dQkjrrTDmA+nnUrNnrQqaqCXpDLfcKRH+pxwXkqwMFUtvSBCr7nNLT1JnOv/mwrmXuNCxiYI+q+tO59C4vGdVfCA5W5uT+0bjsSOD/l9DpNFApE9aovj7mroGw0l9sBmaGHOcmouRiiXbJ6V8fJI6q71K2dI1EvQuVW0PtGd01XBoqnMYxvqR2NWPhhTavfyC0JYHtRcRFu4BRvea0KMRir1jEExnxxA/ogaUm4YR0okflzoK4wAEeW67fv/63nUe4MnzN6awtrsWknKSmcbO6n2y+zMGrW5sMHht9z4Ft6rXyXRvOpc6sIpst228d77Vr9aWPn3F4U82Hcex2up0Url4fPsL+bK1r5LT98lm8yz1F/CGuaSU57fYIfgdeMuM2BVDLb8Z/7R+1F+GmYuPg1Mu5JseAVEyiUXuu0o17ZCzs9S34VT3IF3drUQgJ6Gdbg1sGqMQMtpVwpuJ3o63Mw7nHl4mdyd16RFyKov0/kfAVM9p0G1KrZWefZpHBvnsR6lRE3mFmb5b9UCq7O4Cmug5Sae1A9NOy6Ia7Zvh9iAuD1q1H6nfZPsJ9UbcqgeS3j+wMpGFPyyXi020av9UPDKuZdXSjCy65+3ipZZyqyy6M0bCbpcFb50sjI4U3EsAT40xQnuhZYGfm2g8KL2+URbZ/bsITV/6hwE4bGI5bK9yNCxnL4wszgzWJS9ouF38Yt0vNxsWnZ1cIxSJOjilHd3nEV04H5HnvEZZGqGgS4a4ghIeYo02xgvGKKi952k9p8jS+A821vNlfdozq4b8MHLLk+xyIdGi/YUfuqVJ0cSvDNmwYCmUjfPa62hRC4e4UT2NutReQs8LB+oQIZp6QZPUZY3saKPJ6EV92gvGmmt7SKcDjq1t98y13+kyodespT0o5AkXYT25GZ1J3eHG1j3AaZQ726VjE30wjy5YWB05+LRXNz1q3TdDjjHDxtpFhetJs5bbZ6nf2brvgtva6m2yuAuXcktfUZAjnCK+d16c18FeZ331l2zD5v8D82AzZsyYMWPGjBkzZnxASP/MJN+LCEF8/yhWJL03b295AavqonGjK6g4vX9aKVrBX6XgVqlXzNRFsnpFqDCFf81m5v9PaK2CSVnacQi7naXB8qjGvbQu1ncjC6er8e//pn61wT43ipItbMXc7Memj0Y8mhfqXxcD7IP0aGsbj7R2UkkRpYuBjBEzMkw6PDws2u50e948gAPrbO+42AayR88z6k2P+BnZAr8gDJ6DUgIppmYevCGMHXE6bCMykgEFAZbpyXYZcUfsJgkgJ7qnW5Gx41JkyE9dl8v1ujgOFR0mzuneAcdn5uJa58lhuM39RVat1E4dNKJEldjNWEXDtVOM+nKimmhMDTpL5tSpOCWVPyhXhcYwme8sl41n2he3u+weh8Jr2DxZnR7WkC3VzuOgItR8+bpXFsLFjrArmkX+YhNiFZcezRUeNJMg1jXJqDPRhnBMV8Tst1o5slVWMtpKg2fjDKGoWiYmFE43HGvHbLZaeRAnS6fv5MkzoXDbfsuNAhhdPjbMXz41DHupB2n7PecuWaN4SPr4yn6sLFlUGcZ8DXHJ90pQOCY5d6GVzo+xp4ZVinFCjH4ZzomOUsBDqQ6hOiK4VfYiJhd2s9VKGHtsVkGSpRI+D4U7jAS2wfTROV7Hh0uIM7edLpLXtLxgnjS5ipCMzORBFDjzefpBZqcSolgF2km1w9vIku1dzqMgU62ZWjAG94ZQQUW4OQta4hsHGlN/AQo6YmZJwLdHHAVFvOiPQ0V8FwfcpLXjUSR2THuyCe5iazXQpojX1dX5Cz/zczhOeSQkc/Mgoy1Ae+RmHiSythFdbhc6gzzLWjvNIhGqxOAbTI7uIjmQ/cyLeJe21rNEfuXMJkbqSRoLitHqgaOo2zGEqHTkw2QM/2HTutguoKwOZilZMliPdAYp9bUxH5HYoWG+J0Ndb3AT89LObnPcE2dqcrztW1OYwofOisxApj92GLdcLO3cH6ebby5N3H7lzmLFTzMF+MPchAN5zBesiI3k0quqB8r2DIeD6B7sfIh6GPu8iWJCwUB5KmD39Ao/2YfK6hE8D9UiVL6XevwE3mB44TQ/S/dSYB+FohxfCl6YQoqnoaox0GIyTxT8krH7f1Sb5e/EzMXHwczFx8G/zUU/PR5WC72wbmi4HZkHRpCfki8ADbe5WVjGu1Oyw3WbqBcmq/HSGY9hRgkBb/fk9XN9gKk23YN7gZFGaYgfNk5cP9+2bxJKuFCwqrFzBvJuqo/05C4ucHGJPq6ws1oa2TPyBNNn+CDByCreNafkC6GCofihGWXD6pTskF/N7SVZbF2hs59mo8Mf42sZfnT+p3tOTtRA4GB/iVvjgIeNb9uJ1sjzUHwwMBgbb3GLT8gu0NIGu1cPZBxxOF5JMWpmubsyPCnVUbMGmZIL+hPy8I0TB6ehBlGHRhahOiU7dNdze0EWj0MD+GFk8X0viyfjH6a2ysN+3Fd1v7dkPcjCiIG1x7KAympD4jI9CeUNQmNWgvkpeSrlG2Wxf2vG0/sHTwPZre2o6FCq+6GioSAju2zmsADEkYUTaTPIIvBOQgXJ6ByRHdJzud3jWBZwb2nzaOvOiYE+V4MXU1lAVt4SCqqVk4VyocQoKz6oryZGDPFeArw+0pm8RxZn+qAzGBSxk8FCXHTb5i5yGAJELhQcWxsaEmVGpGw/9oWO8lKdy+0eLDpCEN2EYOLyW0MF08M0VDA9Bqf+pxeXRw/eCvkbQ9371Lsdr4vhfUOF3lvxOt25V4W6aGV3xowZM2Z8eCjGZCglT6RMgajSVKqYc08pzCIhJOUcJdoLkx7jv2aQ9j2gUlVUvKuUlBngjSokW6Ui7HjRx15VpV3lJ0pVoukq+eG2BOTcvNJi30wIezQIPbvym5r9ARJOPYZEBDACkT9+1EXG3gX3JQOUhi+bpv4t8PI8yqs27fOo14emK5q20H/+aoXyvE8VL7qu6FraN01fNbl26qrhSawEi0XyQazlRqboUQUQDUAYgigIwiAEoQ9Cpr8Hg8i33wfIBwEKAfI40t4ACqjv4wBS9B5b0b0vpKqSXMhON4xeKClSplIfiFify1T6q06oRMVCxuKtq9r960NrbwI3e9ipSkoFoTLT+roxR0BzkElPZD4ME12JkjhR7M1fAfnLXt6GC+/M77vM5OOYKJgxY8aMGTNm/J/if9V1beZJiYsLAAAAAElFTkSuQmCC", "project"=>{"title"=>"123", "description"=>"aldenla", "project_link"=>"nub.com", "img_link"=>"data:image/png;base64,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"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mProject Create (1.1ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "project_link", "img_link", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "123"], ["description", "aldenla"], ["project_link", "nub.com"], ["img_link", "data:image/png;base64,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"], ["created_at", "2019-02-27 21:04:48.811304"], ["updated_at", "2019-02-27 21:04:48.811304"], ["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:11
+No template found for ProjectsController#create, rendering head :no_content
+Completed 204 No Content in 71ms (ActiveRecord: 29.3ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2019-02-28 05:05:11 +0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"title"=>"artlnal", "description"=>"sldnlanlk", "project_link"=>"nadnlknkaelnl", "img_link"=>"https://s3.amazonaws.com/halleonard-pagepreviews/HL_DDS_0000000000149530.png", "project"=>{"title"=>"artlnal", "description"=>"sldnlanlk", "project_link"=>"nadnlknkaelnl", "img_link"=>"https://s3.amazonaws.com/halleonard-pagepreviews/HL_DDS_0000000000149530.png"}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[36mProject Create (3.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "project_link", "img_link", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "artlnal"], ["description", "sldnlanlk"], ["project_link", "nadnlknkaelnl"], ["img_link", "https://s3.amazonaws.com/halleonard-pagepreviews/HL_DDS_0000000000149530.png"], ["created_at", "2019-02-27 21:05:11.151454"], ["updated_at", "2019-02-27 21:05:11.151454"], ["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:11
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:11
+No template found for ProjectsController#create, rendering head :no_content
+Completed 204 No Content in 81ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:05:11 +0800
+Processing by ProjectsController#index as HTML
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:05:11 +0800
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Processing by UsersController#validate as HTML
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/projects/23" for 127.0.0.1 at 2019-02-28 05:05:16 +0800
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND "projects"."id" = $2 LIMIT $3[0m  [["user_id", 7], ["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[36mProject Destroy (1.4ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:27
+No template found for ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 94ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:05:16 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/projects/edit" for 127.0.0.1 at 2019-02-28 05:05:40 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"24", "title"=>"play piano", "description"=>"i composed a song for myself", "project_link"=>"listentomary.com", "img_link"=>"https://s3.amazonaws.com/halleonard-pagepreviews/HL_DDS_0000000000149530.png", "project"=>{"id"=>"24", "title"=>"play piano", "description"=>"i composed a song for myself", "project_link"=>"listentomary.com", "img_link"=>"https://s3.amazonaws.com/halleonard-pagepreviews/HL_DDS_0000000000149530.png"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (3.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND "projects"."id" = $2 LIMIT $3[0m  [["user_id", 7], ["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:21
+  [1m[36mProject Update (0.6ms)[0m  [1m[33mUPDATE "projects" SET "title" = $1, "description" = $2, "project_link" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["title", "play piano"], ["description", "i composed a song for myself"], ["project_link", "listentomary.com"], ["updated_at", "2019-02-27 21:05:40.201630"], ["id", 24]]
+  ↳ app/controllers/projects_controller.rb:21
+  [1m[35m (27.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:21
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:23
+Completed 200 OK in 45ms (Views: 2.0ms | ActiveRecord: 33.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-28 05:05:40 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 05:05:40 +0800
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 7]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+

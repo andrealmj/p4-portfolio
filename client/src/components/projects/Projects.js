@@ -68,7 +68,7 @@ class Projects extends Component {
             {/* Button Trigger Modal for EDITING A PROJECT (change data-target)*/}
             <button
               type="button"
-              className="btn btn-primary float-right"
+              className="btn btn-outline-dark float-right"
               data-toggle="modal"
               data-target={`#anything${project.id}`}
               data-id={project.id}
@@ -128,19 +128,21 @@ class Projects extends Component {
       });
 
       return (
-        <div>
-          <h1>My Projects</h1>
+        <div style={{margin: "40px"}}>
+          <h5>My Projects</h5>
           <br />
 
           {/* Button Trigger Modal for ADDING A PROJECT (change data-target)*/}
-          <button
-            type="button"
-            className="btn btn-primary"
-            data-toggle="modal"
-            data-target="#exampleModalScrollable"
-          >
-            Add A Project
-          </button>
+          <span>
+            <button
+              type="button"
+              className="btn btn-outline-dark"
+              data-toggle="modal"
+              data-target="#exampleModalScrollable"
+            >
+              Add A Project
+            </button>
+          </span>
 
           {/* Modal for ADDING A PROJECT (change id, aria-labelledby)*/}
           <div
@@ -184,13 +186,13 @@ class Projects extends Component {
     } else {
       //if no project data exists (i.e. user has no projects)
       return (
-        <div>
-          <h1>My Projects</h1>
+        <div style={{margin: "40px"}}>
+          <h5>My Projects</h5>
           <br />
           {/* Button Trigger Modal for ADDING A PROJECT (change data-target)*/}
           <button
             type="button"
-            className="btn btn-primary"
+            className="btn btn-outline-dark"
             data-toggle="modal"
             data-target="#exampleModalScrollable"
           >
