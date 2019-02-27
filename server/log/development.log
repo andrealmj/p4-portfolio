@@ -21910,3 +21910,26 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 17ms (Views: 4.7ms | ActiveRecord: 2.8ms)
 
 
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 03:47:43 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 25ms (Views: 1.9ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-28 03:59:18 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-02-28 03:59:18 +0800
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 7.9ms)
+
+
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 12.0ms)
+
+
