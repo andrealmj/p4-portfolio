@@ -19,7 +19,7 @@ class AboutsController < ApplicationController
   end
 
   def update
-      if update(about_params)
+      if update(params)
           redirect_to @abouts
       else
           render 'edit'

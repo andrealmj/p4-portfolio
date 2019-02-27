@@ -41,6 +41,7 @@ class EditAbout extends Component {
             this.setState({
                 emailMessage: "Please enter a valid email address."
             });
+            e.preventDefault();
             everythingIsOk = false;
         }
 
@@ -48,6 +49,7 @@ class EditAbout extends Component {
             this.setState({
                 phoneMessage: "Please enter a valid Singapore phone number (8 numbers)"
             });
+            e.preventDefault();
             everythingIsOk = false;
         }
 
@@ -62,7 +64,7 @@ class EditAbout extends Component {
                     phone: this.state.phone
                 }
             }).then(val => {
-                everythingIsOk = true;
+                console.log(val)
             })
         }
 
@@ -72,33 +74,39 @@ class EditAbout extends Component {
     }
 
     render() {
-        return (
-            <div id="about">
-                <form onSubmit={this.handleAddItem} onChange={this.handleChange}>
-                
-                Name: <input name="name" type="text" />
-                <br />
-
-                <div class="form-group blue-border-focus">
-                    <label for="exampleFormControlTextarea5">About me:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" name="bio"></textarea>
+        console.log(this.props.existingAbout);
+        if (this.props.existingAbout) {
+            return (
+                <div id="about">
+                    <form onSubmit={this.handleAddItem} onChange={this.handleChange}>
+                    
+                    Name: <input name="name" type="text" placeholder={this.props.existingAbout.name}/>
+                    <br />
+    
+                    <div className="form-group blue-border-focus">
+                        <label for="exampleFormControlTextarea5">About me:</label>
+                        <textarea className="form-control" id="exampleFormControlTextarea5" rows="3" name="bio" placeholder={this.props.existingAbout.bio}></textarea>
+                    </div>
+                    <br />
+    
+                    Email: <input name="email" type="text" placeholder={this.props.existingAbout.email}/>
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.emailMessage}
+                    </div>
+                    <br />
+    
+                    Phone: <input name="phone" type="text" placeholder={this.props.existingAbout.phone}/>
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.phoneMessage}
+                    </div>
+                    
+                    <button inputType="submit" className="btn btn-primary">Edit</button>
+                    </form>
                 </div>
-                <br />
-
-                Email: <input name="email" type="text" />
-                <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
-                    {this.state.emailMessage}
-                </div>
-                <br />
-                Phone: <input name="phone" type="text" />
-                <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
-                    {this.state.phoneMessage}
-                </div>
-                
-                <button inputType="submit" className="btn btn-primary">Edit</button>
-                </form>
-            </div>
-        )
+            )
+        } else {
+            return <div>Loading..</div>
+        }
     }
 }
 

@@ -3,12 +3,12 @@ import { Switch, Route } from "react-router-dom";
 
 import Navigation from "./Navigation";
 
-import Login from "./Login";
+import Login from "./Login.js";
 
-import Home from "../components/home/Home";
-import About from "../components/about/About";
-import Contact from "../components/contact/Contact";
-import Projects from "../components/projects/Projects";
+import Home from "./home/Home";
+import About from "./about/About";
+import Contact from "./contact/Contact";
+import Projects from "./projects/Projects";
 
 class Main extends Component {
     render() {
