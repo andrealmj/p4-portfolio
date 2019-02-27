@@ -64,10 +64,6 @@ class About extends Component {
             <br />
           </div>
 
-          <button type="button" className="btn btn-outline-dark">
-            Edit
-          </button>
-
           {/* Button Trigger Modal */}
           <button
             type="button"
