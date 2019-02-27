@@ -7,13 +7,6 @@ class AboutsController < ApplicationController
     }
   end
 
-  def new
-    render :json => {
-    "user id"=>current_user.id,
-    "about"=>current_user
-  }
-  end
-
   def create
       current_user.name=params[:name]
       current_user.bio=params[:bio]

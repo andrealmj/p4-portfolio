@@ -3,14 +3,8 @@ class ProjectsController < ApplicationController
 
     def index
         render :json => {
-          "project_data"=>current_user.project
+          "project_data"=>current_user.project.order(created_at: :desc)
       }
-    end
-
-    def new
-        render :json => {
-            "project_data"=>current_user.project
-        }
     end
 
     def create

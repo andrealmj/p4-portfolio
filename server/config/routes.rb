@@ -9,11 +9,10 @@ Rails.application.routes.draw do
   get '/users/validate' => 'users#validate'
 
   # to render the user's portfolio page to the public (don't authenticate user first)
-  get '/users/:id' => 'publics#show'
+  get '/users/:id' => 'publics#index'
 
   # ABOUT ME
   get '/abouts' => 'abouts#index', as: 'abouts'
-  get '/abouts/new' => 'abouts#new', as: 'new_about'
   post '/abouts' => 'abouts#create'
 
   patch '/abouts/:id' => 'abouts#update'
@@ -22,7 +21,6 @@ Rails.application.routes.draw do
 
   # CONTACT INFO
   get '/contacts' => 'contacts#index', as: 'contacts'
-  get '/contacts/new' => 'contacts#new', as: 'new_contact'
   post '/contacts' => 'contacts#create'
 
   patch '/contacts/:id' => 'contacts#update'
@@ -31,7 +29,6 @@ Rails.application.routes.draw do
 
   # PROJECTS
   get '/projects' => 'projects#index'
-  get '/projects/new' => 'projects#new', as: 'new_project'
   post '/projects' => 'projects#create'
   post '/projects/edit' => 'projects#edit'
 

@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
 
-    def show
+    def index
       render :json => {
-        "about"=>current_user,
-        "project_data"=>current_user.project
+        "about"=>user.find(params[:id]),
+        "project_data"=>user.find(params[:id]).project
         }
     end
   

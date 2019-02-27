@@ -121,7 +121,7 @@ class EditProject extends Component {
                         </div>
                         <hr />
     
-                        <button inputType="submit" class="btn btn-primary float-right">Edit</button>
+                        <button inputType="submit" class="btn btn-primary float-right">Save</button>
                     </form>
                 </div>
             )
