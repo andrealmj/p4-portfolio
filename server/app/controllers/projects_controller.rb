@@ -17,12 +17,14 @@ class ProjectsController < ApplicationController
         current_user.project.create(title: params[:title], description: params[:description], project_link: params[:project_link], img_link: params[:img_link])
     end
 
-    def update
-        if project.update(project_params)
-            redirect to @project
-        else 
-            render 'edit'
-        end
+    def edit
+        
+        proj=current_user.project.find(params[:id])
+        proj.title=params[:title]
+        proj.description=params[:description]
+        proj.project_link=params[:project_link]
+        proj.img_link=params[:img_link]
+        proj.save
 
         render :json => {"project_data"=>current_user.project}
     end

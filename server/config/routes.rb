@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   get '/projects' => 'projects#index'
   get '/projects/new' => 'projects#new', as: 'new_project'
   post '/projects' => 'projects#create'
+  post '/projects/edit' => 'projects#edit'
 
   patch '/projects/:id' => 'projects#update'
   delete '/projects/:id' => 'projects#destroy'

@@ -13,8 +13,7 @@ class About extends Component {
         email: null,
         phone: null,
         everythingIsOk: false
-      },
-      showEditForm: false
+      }
     };
   }
 

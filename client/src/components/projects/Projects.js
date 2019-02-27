@@ -57,8 +57,10 @@ class Projects extends Component {
     const projects = this.state.project_data;
     console.log("PROJECT DATA", projects);
 
+
     if (this.state.project_data.length > 0) {
       const projectsList = projects.map(project => {
+        console.log(project)
         return (
           <div key={project.id}>
             <button class="btn btn-danger float-right" data-id={project.id} onClick={this.handleDelete}>Delete</button>
@@ -68,7 +70,8 @@ class Projects extends Component {
               type="button"
               className="btn btn-primary float-right"
               data-toggle="modal"
-              data-target="#example2ModalScrollable"
+              data-target={`#anything${project.id}`}
+              data-id={project.id}
             >
               Edit
             </button>
@@ -76,10 +79,10 @@ class Projects extends Component {
             {/* Modal for EDITING A PROJECT (change id, aria-labelledby)*/}
             <div
               className="modal fade"
-              id="example2ModalScrollable"
+              id={`anything${project.id}`}
               tabindex="-1"
               role="dialog"
-              aria-labelledby="example2ModalScrollableTitle"
+              aria-labelledby={`anything${project.id}title`}
               aria-hidden="true"
             >
               <div
@@ -90,7 +93,7 @@ class Projects extends Component {
                   <div className="modal-header">
                     <h5
                       className="modal-title"
-                      id="example2ModalScrollableTitle"
+                      id={`anything${project.id}title`}
                     >
                       Edit This Project
                     </h5>
@@ -105,7 +108,7 @@ class Projects extends Component {
                   </div>
                   <div className="modal-body">
                     <EditProject
-                      existingProjectData={this.state.project_data}
+                      existingProjectData={project}
                     />
                   </div>
                 </div>
