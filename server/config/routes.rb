@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
   get '/users/validate' => 'users#validate'
 
+  # to render the user's portfolio page to the public (don't authenticate user first)
+  get '/users/:id' => 'publics#show'
+
   # ABOUT ME
   get '/abouts' => 'abouts#index', as: 'abouts'
   get '/abouts/new' => 'abouts#new', as: 'new_about'

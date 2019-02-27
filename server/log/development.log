@@ -9472,3 +9472,1380 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:51:15 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:51:18 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:51:25 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 20ms (Views: 4.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:52:15 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-27 17:53:50 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/logo/logo-fitter-top.png"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2019-02-27 17:54:02 +0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"8@8.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"8@8.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "8@8.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "8@8.com"], ["encrypted_password", "$2a$11$3iZ1DJSLP6904Elgf7mxPegWPX9dL7rGJ.Ep563vh2gIkWytUBI8a"], ["created_at", "2019-02-27 09:54:02.270272"], ["updated_at", "2019-02-27 09:54:02.270272"]]
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[35m (26.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:7
+Completed 200 OK in 156ms (Views: 0.5ms | ActiveRecord: 27.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-27 17:54:02 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"8@8.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"8@8.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "8@8.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 129ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:54:07 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:54:11 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:54:31 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:54:55 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:55:05 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 13ms (Views: 2.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:55:35 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:55:36 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 16ms (Views: 1.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/abouts" for 127.0.0.1 at 2019-02-27 17:56:21 +0800
+Processing by AboutsController#create as HTML
+  Parameters: {"bio"=>"Hi I'm a magic eight ball. I help you make decisions based on Yes/No questions.", "name"=>"eightball", "email"=>"8@8.com", "phone"=>"88888888", "about"=>{"bio"=>"Hi I'm a magic eight ball. I help you make decisions based on Yes/No questions.", "name"=>"eightball", "email"=>"8@8.com", "phone"=>"88888888"}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/abouts_controller.rb:22
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "name" = $1, "bio" = $2, "phone" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "eightball"], ["bio", "Hi I'm a magic eight ball. I help you make decisions based on Yes/No questions."], ["phone", "88888888"], ["updated_at", "2019-02-27 09:56:21.374726"], ["id", 6]]
+  ↳ app/controllers/abouts_controller.rb:22
+  [1m[35m (28.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/abouts_controller.rb:22
+No template found for AboutsController#create, rendering head :no_content
+Completed 204 No Content in 95ms (ActiveRecord: 37.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:56:21 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:56:35 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-27 17:56:44 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 13ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/logo/logo-fitter-top.png"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-27 17:56:49 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 138ms (Views: 0.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 17:56:51 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:56:52 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/projects/edit" for 127.0.0.1 at 2019-02-27 17:57:21 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"5", "title"=>"test proj 3", "description"=>"plSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS", "project_link"=>"github.com", "img_link"=>"data:image/jpeg;base64,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", "project"=>{"id"=>"5", "title"=>"test proj 3", "description"=>"plSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS", "project_link"=>"github.com", "img_link"=>"data:image/jpeg;base64,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"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND "projects"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[36mProject Update (5.1ms)[0m  [1m[33mUPDATE "projects" SET "description" = $1, "img_link" = $2, "updated_at" = $3 WHERE "projects"."id" = $4[0m  [["description", "plSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"], ["img_link", "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUXGRoVGBUVFRUXFhYXGBoXFxUVFRUYHSggGBolGxgVITEiJSkrLi4uFx8zODUtNygtLisBCgoKDg0OGhAQGC0dHR0tLS0tLSsrLSstLS0tLS0tLSstKy0rLS0tLS0tLS0rLSstLS0rLTctLSsrLSstLS0rK//AABEIALYBFQMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAIHAQj/xAA+EAABAgMECAMGBgICAgMBAAABAAIDBBEFITFxBhIiQVFhgcEykbEHEyNyodEzQmKC4fAUUqKyksIkQ2MI/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQACAwEAAQQDAAAAAAAAAAECEQMxQSESEyJhcQQjUf/aAAwDAQACEQMRAD8Avkl4wnloissORHrRJJbxDNPpgVlnf3eFidBPJ4FMdIBdDOfZL5MYpnbN8KGcvRJ0BbM8TM1FbDaRndD9ApLPxbmOyy3W/F/aE8BVj+J2Q9UmYKPOZTeyDt/t+yWRm0iuH6j3VvUQyhisB/XsUrl8Tkm0oKwogz9Epl/F0S+Ay1hsQz/cAh5LAZoq0BWCw8/ug5M3HNS9jLaHxOgKKk8WqG3BtNP6VJJnw9FfQFNikU/MmUD82SAtIUiHMdkwlseiTsK4H4gyR0yPhHNAgUiDNMIo+G9SAGz8XIieGwOqGkfGUZNDYGaToD2f4Oq2tQXeS0s43HNTWiNjp9k8G0mdluSCtAUc3PuEXIHZahrUGGf2TwHAeiVhwESpIA4m4YcUq0stZ0NoYx2qXXawNNVoA1nnnUhoHGpXI7ctSI+Idt5FbiXOc6gwJqVLWpi7wLVgO2WxmEncHC/JaWUbz0Xzz/nxDf751cyb+YOC6D7ONNdsQJlwqbmPPHcHfdNlxdQtAVhnp6rWyvB1Uk4Kw3ZKCyDcVplHawvb1TKXOw3JAWsPCc0ZInYar6BId0Y5/ZM4w2TklkS6N5Jq/AqgJqxeMwWIByKPyd3T+lYDxn6JHNikR/zH1T+AKw3jkfRYikclj0TS0RWXbyI7hK5PxJtMistlT/sk6C6TOGYU+kLdtp/T3KHlsCjNIBew8j2TwaWUdtuR9EFPikZ3zIqzDts8voVDa4pGPQ/QJekHWaLnjl2KTwfEMk5svFw5BKGij+pCt8B80PgDke9EBJ/mzTGKKwHZ9wl0niUvYntseA8vstZI7LVJaw2IZ/uChkjshT0eWuNs9EZKG8ZIa2htftCmkj4clfQvjXRP3FMabL8vugJ0UefmTGGLnZKQpZJ+PoipyJSHzrcg4Jo8E8Ejt62HBkQtNK3A79Vu/wAyVm5ajWOO60ndJIctrA6z3nBjHcP9jg36qrzvtDmnEBjYVMNWjj5uqL8kldarGtc1sMRYz3E68QVDAMKV6m5K2QIkVxbDYHRMCQKMZXjTE3XALEyvrteOf26DZPtIY0BsaERzY4Ec7inkTS2UjNq2KMa0NxF3NUKS9mUxFAdEf7sY1d4j+3cM15P6Ef4zDqRdbiCKJ+rj1s/Qy70MtafExFeK0aXVaSaDUbWnQkkpNYks2LHfqDWa0EE0uPMDcEptDW1No4VFP44K56GNc+XD4cKgpSvE7zRY5Pk26cUm5CPSSxWvZVjQ2I3AgUryNMVUYDrwHXHDJw48l0+04JFailVQNJpYQ4ocMH45j+E4c9/K1zYeumaE6QuMDVc4ua3YeDeWG/VeDvYfoaq7WM/FcR0Vnfdx2EnZifDd1ur50Pmuu6IxDqlpxbd5Gi7S/dPJlj6bWsNkZ9iiLNPwworT8HUL2yjsdV09YRzV0UZJoldofiNTSHgEAUPBYsBxzWKjW1BSK/PsE7s68HmAlNstpGdzofomdkG79o+yxO1JZbxDyTkisu/r2KUAUfk4+qcwRWFEGfokCmX3o62r2Qz/AHBAS29MLTvgMPMehCeASQN7c15bo+L+0d1rJnDMeqn0hG20/p7/AMp4JbLO30+yWxhSIfmPdH2YdpuR9EHaApFd8yt6Qa0VgxB/dyWSniOSaS17Ig5dkqlfF0Sgy0BWC3kfuhpDwnNFzd8DJ3dBSGBUvYntcXNP6fstpE3NUdqxW0htLhrFpIbW8gUBIHAXLJE7LVfRFaY2zmEdL9kHa42j0KinrVZLw9dxwH13Kb1TWyq0JtjXHWIDG3urvpuyXObftgx3uEOuoSb6Y1NwaERbgnI/4UvF1Kkl7hqg1vuDiPNKmysYbJaGDea1cev2XC5SvVhx2dA3N1Nlt8RxDRyJuHVdt0L0aZJy7NYD3pFXE7icQOfE/Zc00Lsb3s9BL72wiYzt/hGyP/ItXW4Nrwo7nMYHVaTUFpaatvwO77rGWUdJjZdPbSNAqVaztetL1tpHpg4Pe3UqLocNv6iaVcR0S2PN+6bquiQy+m00NOycaa1fquVm/sd8br5VUtqSpUjqrT7H7ahAPlYjgHBxLa7w41uS+ZZrg8VSbckXQniJDcWuBqCLiDyK64X8p+Nc+THX7o+l5myoT2kOY0g8ly3T32fxHsJgX0OsAfSvmtfZx7VS9zJWfIBdRrI4uBJuDYg3cNYdV1uYpqkncKq3G4345TPc1enzJZ8jH1vde7cIjSCW0vHMnCnNdU0YtdkNzi87xr8WBwAD+bdaoOYTS0pepLuPToqza0kWvbGa2ur4m7nNNz2HMfWhXpxw9rzZZ7+R0WfvhkjC41Ga1sg7JzVMs3SqFAY2Wil3u3/gxj4aE1bDiH8prVuFKghXCxz4lq9sNrT8TTn2TGCdkJfav5c+yNljshAMcTmsWRfE7NeIgm3x8UHi0epRdjHDKig0iG008j6raxXeHqFn1oFMXRXfMfVOJG9rxy7JTaQpFdn/ACmtlm85BWBPLYplN3yw5EeqWwrnUzCZOvl3cj3BUnQWy5uOaN0gHgPI9kDLb0fbX4cM/wBwTwRWcdpnl9FBa4pEd0K3s93gzC8tsfEOQV8QXI/mHJKIHjHVNbON+YSoXP6lKGMUfBfn3CTmeZAhxIsR2q1oqT6Acybk1jxmsgxXPcGtAqScAuP29aBtB3idDkoZxwfHcLqtHDnnvTX0aSs9MWhNmaLzCgQjTWBvoK0hQ67+J5npftHdJ4EQmGXBrgat1rg9vEH/AG4hc3nLR1mthw2hkJgo1g4DigWk1rvVpHdJ18J5qXilN15SqetiFD8DQXDBxvIpcKE4dFz6zbWcQGl1/qio01TevBy5Z71X0OLjw1uGVp2y51dZxv3BV2em7iTd6qC05x7GGIG1rWhPL6rn9p2hEinbPQXDyTj4rl21nzTHp07Qa1otZv8Axm68YthNbUgNYC6JrPc7cBQHyVx0Xs+LLQ40xHiDXdcNUOApvO1UuvuBpxVZ/wD55lmhk7Gd/wDmwcgA9x9R5Kx2zOxp2FFfCo2HCcW03ki8OAwNxC1ySY3ScVuf2q7NSjZqOGk6riajgePVNrS0SkGMDnQx7wD8myTzJF5VPmnRgAS8l7DrNdqapuyxTuFabo8MPOODhwK5/cY6/Lfob/Ha25uHM1Va0lZUFWp5Vdthtaq4drya/HTn0SGam5d09mGmDpqW/wAWM4+/hAAE4xIW51d7hcD0K5E9gab95xR+i1riTnocV3gvY48GuoC7oQDlVeyXfb59x1LXepmGNW9L4suHXC/kiYkWG8Al4oaECuIx6rxuqMB5Arq86iW9ZWrrspsOrT9LjiK7gfUBG+z3Sww4wkptzi5xpCjOFzt4Y8/7YivJWWdlxEBBbiqnaNkubeBU4czzz5qjpNq+Ecj90VJHYCp1laSNiMEtGcBHbQYg6wGFaYOp6K22edgLPqo5g7R6LFrOeLoFiBlpF+Q59lFYzrx8ymt78OGefZCWQ6/qFn1W1sj4xyHojrKdtZt+yDt4Uijm0epU9ku2m5H0SdgKIKRT8x9UxhXwIgz9Al89dGd8yYSfgiDl2KsCmWxKY2nfAYeFPQhLJY3pnN3y2VPVSdAKSNw5HuprdG0Pl+6FlDcc0ZbmLDyKeI9sw3ty7JfGYfeHk4k8gK3ngiJWLqBrjdQb+aQaTWnCiQ3Qy/VY7xarSS++urd+XjxwWtbhtVtJ7Tiz51IYP+I03bvfuH5yT/8AWN3HFV6clXk7TmAC4N1hcOAHBH2jEl3Xe/eThRzXgCnABJYsKHXZeDmHD1VR46FTeDlevFqG8/qppWWiRniHCYXvdgB9STgBzRWjKlwawEuJAAGJJworjZFh/DL49721uuLW0FQOZwT+x9FocpCa40dGd437hxYzgOeJQ74wbBc47/uFxz06YW+KvbbatEPkMqClPO9czt6V1HmmC6XaW04njtHk0+EeSpmlkvR9TdrNJA4DcsYX665dLh7B5nYnYPEQ3j/mw/8AqrvoeyJ7l0OHqgmJFc9zjc0A6tSN+GC497NbY/xJ2EXXQ4hMJx3AOpQnJ2r9V0HTpkeFAmXS7i3UeIjxiDCi3OqDuDmgrnyT/ZP5d+G/sv8AAG3mQmRXA2hAe+p2dblXGpGNyAsx/wAQtBG0KGhBFQKtIp/b1RLOsaYnHPMNtQ29zjc1td2fJWPRmynSoc9+JeABu1WV1j5kjornjNdtTLO3dnz/AKsMRySWu64pxMOALhzSG1nbJXPCLnfhHOhovdd1upyCRRous4kYbgjrWiXhv+oSoL14T48eeX3TrXso0jD/AP4kYjWYKwnHe0G9l+8buWS6S6JW4dF8ywIzmlr2OLXNIIcMQReCuyS2k0acgQIcvRsWIysaLuhAHVfQD81cB+pdI45RZ5u0YbXautV5/I289eCr+llpaoa0CjjjTd1TGGZaQYGVLojtwGtFef8AZ2qLhzNyoVs2g6NFc4jVvpq8KLUZSQJijg4AazSHA8xgV0/Qe2jMwXlzdVzHappWhuqCPsuQG68LpPssivMKLU7IcA1t1xIq4jO5KLXPna6LFraOIyWLKm9sXwGngR3CW2c6hPQplP3yx5EeqTyLto5LN7Uz0iG208u/8rWynbTM1vpDhDOfZDWa69vzJ6PbWuiu6H6BHWb+YcR/fVBW6KRegPr9kXZTtr9v2VnaFEA7SaPvlncvuClIufTmQm0G+DEGfoEhSyTNxR9rXthn+4BLpI3lMLRvgsOXopOgltgPOs5l5rhuACoVq2g9pILQebagjsrLpjDc6Wfqkj5SRUgg0NOS5vBkorvDrHM19VuI9jRa4HocfPeoqclrPQHwzqxSyp/KAS76FAO1q7BcOG1UeRCKe2RY0Wbie7gtwvc/BrG8XH0G9dP0ZsmFLUbDaK6oDn02n8yc9y5HYtqzcq4mFFLXEAuZUFj8RQilKjjzVxsf2gi4xoR4EsO/m12Hms0dEnr2ZKg6QxjDZ7s/7V6Vp3+isEtphJxmloi6jiRQRAW15A4fVLdJZIRdXg57RrXfmrSnG+nmsZt4XVIoNCS52FA5w5uqIbc6VCqWncR2u2oA2cN9K3A80/gTJlYohzAILTUG+hABDXDoUhtkmK8vrTWJPGjdwB8ljGfXS1V3t2W7ricb78F2j2bW6yfgGHGo6IyH7mKHf/YwijHnO8HmuQx2tFwUujVtPkpqHMMwaQHt/wB2E7bfLDmAtZ4bi4cn412mHKStny5gQ9Zx1nOvuJ1jUax30w6KmWhHc4kux3DcBuAXT40WTjQmxwWvbEGs13EHuuf206GXuLGgDcvNbd/Xu/LeJWYtcUmnX1dyTCMUvmG3rWPxwyqsWoNsnolhKf2jCxSsStd69OHTy8nYVj6K1+z6VdFmtiKYYawvLhhcQAHDhUoax9HfeX0u4ldA0YsWF7qYheHXa2ESMQHaxu6gLo57OrVjQoDDqN2j4nnxOPFx3+gXP4xq4njerHpTEDBChNie8LWAPPMXC/mq2qy1LlbPZzPFs02GDc8OBHGg1h1u9VUiFbPZnCBmySK6sNxyJLRXO8pR0udGHVer2ZbWnVerKmcS+Wicq9ikUm7a807lXVgRByP/AF/hV+VdtBZqnttXwYZy9CgJF/qCjbSNZZp4Edwlkm64pewx0h8bT+nuVvZbtpvMELS3zX3Z5Hso7MftM8vUK+oFmrorvmKaSN7Xjl2KVWldGdnX0TKzHXuHJJ2tKpI7XRMpq+AORHqlcuaPpmEziXwHcvuCpOgugw2va5rhVpxCpWlGj75R2sxxMN17XcP0u+6usmfF0RFtNDmsqAQRQg3gi7ck6SuIzTKuJcKk8VEKBXq19EyW68Eaw3w/zN+Q7xyxzVJnJZzTQ3UuvF/MEblqVAOtWIaYNb9Saj0XgufUYOFeo3+XopWsDc6ivM4ei8az6E0VXbyIxaf5ERoo1x3U4Ai8U4Kd14Q7lNLtJE0gjPaQ55NMA4k6vIV3Iebmi+lN4QU02jsx/e63sthc2p3GnkSmjaCNCQzmJvFaEmfFc+IBDFQMeHmml2Ksq0I0I7ER4YNotDjqn9uCv7Q17NYbxVUf/F1Wnmn+iE/rwNQm9mz0/L9PRefnx+bejgy+6ER4e9Lpkp8xusCFWrRdSoXLD665dFk+/wCl/wBl7YkkYzmN3byvJyG73YIHiJ+lyt+gNl1hNccakdA4r2YzUePO7pvElWy8AupgF7oa+svEiE3ui6teGqBT6k+aj9ocx7uAxmFak5D+ShNBY4bIazsHxX62Ru7Lbmm0qkdRwiNFzjfTcf7VV0p9a8d2qWF1RcRXeALjmkLkRE4q5+yyvv4vDUHnrXd1SnlXf2XMGvFdW+gb0vKXpXSHLxZVeLINsZ1YbhxZ2IVdguvCd6Nv3fp9CkFaGnA+hWb1GoscxfKu5HuPulUk685JnDNZeKOvoeyTyTtrol8De1zWFDP9w/hQWe7w5qW0DWXbyI7hByTruqt7RvbQpFOQKMs121mEJpB+ID+nuVPZztpuXZPTwA66KfmPdNGXwogz9ErnLox+ZM5bwvHLsVIFskdo5Iu0vw2HogJN210R09+E3kfuk6EMidnql2llkQozqubR1PELjvx4o2RNxzW1s4tP6U8HNLY0PmIY1obfesxqzxDNuPlVVx4obxQ7wcQeY3Luci7Zb0SjSCzIMWIfeQ2uwvpQ4cRertNORVUMTFdJnfZ1CffBjPYaV1X0e3zFD6qqWhofNsrqtbE4ahv/APE0KuxULQGH94IuQGrAbzLj9VFOwiKhwII1gQRQg8CNyOMKkCDza4/8itBVOuLtmtK45ImzZcUoBQKCOzDP1Tew4FVFaT0HValejMQsjkbnkj63J9booEhso0eHc6rly9adeLtdLPHxKKr200mI4AE37lb7JaKl54JHbVoiG5zYbRrDFx3ZLzccty+PXyWTH6Sz1sMYwQhDLi0UcSQBrYupvN9V0bQIAykF2rTWDnUxpVzlyP3evEaD+ZwB6kVXbrBgthw4bGiga0ADlee692nztqV7WotXw2VuDfqb6JHoda+rDfLv8Lq6vJx3dfVOPanDrG/aFRpcFpqqLg6YNKG8bjv6oZ70DCmSbzj681v76qCZzlefZkw1e/cSGjpWvqq1otYLpyJqglrG3vfwHBvFxXSLPlmQXtZDGq0UAHL+1WbSLFVYtarFB7o1EvH7vulE5dEeODj6ozRyJtDP1CEtW6NEH6vVZvTR9IGsKIP09ikko7aCbWI6oI4tCRS5o4Zq3wWCZNZY8j/7D7pfJuuKNrWXiDhXsUtkXYpUHW/iw/p/vqvbPfez+8VpbRqyGf7gFFIPubn3T0eWpdGPQplJG8jiEstr8ToO6OkXX9EnYWS5o8dQmM1+CeR7pXWkT9x7pnFNYT/7wSAORPiU1r4M69kLInaOSItQ/Dbn2U8Hsg7ZGagtj8ToFvZztjqo7Z8TTxar4GMq7w5JXENH/u7o+Tdc1L5y55+ZL0MtnR6WmQ4xoQLqXPGy7DiMeq5lpFJCCIcNtdVraCuNKkivO9deedl3yn0XONMIFzTwC1EUKbFx8/JWmwJWjAVWZxmy7Iq+2FDDoLHDAtaR+5oK0K5pEzaDd5u81XpYUVjtw1jim6/yvSOM2kRw4H6G8fQhcuR34lmsiZ2VWrYdWI8/qKaWRHoaJRaHjd8x9Vjgmsq3/kXeMLGXPaeYP1XabJd4cm+lFxeK1dV0MnPeQIZJvA1T+00Xoryk3tChVi9FR3waLoenDBrBUqPDuyKoCbcpmGqk92vAyig6X7N5lohGGPECXHnXf0oArBFNIozCpuhmzM6rfzQtcDmdQO/5Aq3zbviA5d1zap7VeLTWWKsgLBibYzH2WW7dHdzofohLJiUf5fQovSP8bNo9Ss+NemOj8TDI/QpO80eeTj6o2wYl46hAT90V/wAxPdPBYJY1hxBy7FKZB15yTGznV1hxCUSTtpWobWoawWHgfuELJO2eqnnTWBk7v/KDkXXFL2Cbd8TTy7oiRfe3LshrbNzDy7Araz3XMT0CxzSKfm7pmDVjxy7FKbQNIrswfRNIBuOSQL5J230RdofhDkUvk3bYR85+E7kR6hJ0IbMdcV7bH5DyPZQ2Y7xKW1vAw8yp4CJB2w1B2l4z0PoprOdsdVBanjOQVvQPc7YPyn0VL0sZsVVxhGrP29lU9MTSDVajNc6mW1qrZoROB8oGb4ZMMjkDrM/4kjoqo8E4JhoxCiQnRLrntpT9Talp9R1WleThrHcl1sQtV7Xf7Np1bd6UTCXdV7nkb1JaUn76GQ0EubttHG7aaOnouec+OmF1SWWjUK3tJm2T/tR33+qWQi7WDQCXE6oAF5JuAA3nkrzbui0WDJworwfeD8RtxDA7wiu8jfS69Y4/mTpy/cVGitV59nzCG34Vr9VV4UnU8leNFWACg3UXorzo9Mhv5qnxWYq5aYf3kqlS5RAQC8a2pA50UhC0inVFeClVd9E4dJqA6viZEBHMG8eba9VaZ+6J9VUtFnkx4J4OiV6sFfqFbbV8YK5zpq9nANwWKOEdkZLFpkjs9+10KZaRu22Hi3v/ACksm+jwmtuuq2EeRHos+NN7DibQ+ZR2vdGd0P0CgsiJQ9QVPbv4p5tHcJ4GlkvvHNv2SuCaROpH1RVkRPD1CCjGkY/MniG8U1gv5GvogZB2IRYNYcQcktkHbRyVoY2qfhsPPstLPfsjkV7PmsHIj1Q9nO2Tmno8tU/Ed0TKUdhkldsHbzA7o6Sfc3Lsk7AME0eM6JlHNYb8kpeaRD83dNSdlw5JADZjto5Im0vwxyP3QNnu2+iOn/wnciPVTwaWY7ZOa1tY7Q5haWU65wWWufDkU8QZJOqxqr2kUtrwXN3jsnlnu2AgLTbUvA3reKVSpeUhQwKmrkRJw6zDG0uqlP8AjxWPd7ypYDUuaKlo5t3jJWuE2HLsMYnWdgyu9xFwHfhRaCKPIsEaKAKgPcODQKo2Uh1NG3AXki5t3/Y5qGDDJxNamp5k3klH61G0FwWa0eaPS8EOMRsKGIppWJqgOIP6qV5XK1RJRkWE6G9tWuaWkGpxuVVsCuxlQ5K2NiUHAj6qwtcbtKzDKRnwni7FruLTgidGZv4xZxCt2nUq2YZfQOF7TS+vDJc+sBxZHAdc6tFpk+0vVQVw0tOyqcEEEU3lQx21aQpIpvK8aVNKvGg0vV4fS5sMX/qfTs36qy2viP7wVBsXS8yrPdiA11KCuuQTQUrgjJnTxsSlYBbTg8HssTG6W10OXdsjJYqZK+0KWDQHMigjgGnuvVdVBkN1H/u7pva5+DDPOnqsWLnFBWa685I23zttPFvcrFivgksl/hzQ8+aRnZjsvVieIaQTc7JKpF210XqxWhhNH4Lv7vCFs11zlixBtbRvYeX2RFnu2WrFiel6ATZ+I75k3YcclixIUpknbYTGcPw3rFiQB2S69yktg3M6rxYpOkSWY7Y6oa0XUeeixYtQAGgdWmN3nyVZtGeMaMW4Mhkta3/s7MlYsWwbAajIEOpWLFlVksxgFE1mY9wXixUVi1oxNVR7Yje61ojRtNBI5HcfNYsQLJbSWLMAsigVH5m3VzC1qsWLSA4hvK0qvViDWPgD0QryvFiCIuWLFiK//9k="], ["updated_at", "2019-02-27 09:57:21.511423"], ["id", 5]]
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:29
+Completed 200 OK in 22ms (Views: 4.1ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:57:33 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/projects/edit" for 127.0.0.1 at 2019-02-27 17:58:29 +0800
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"5", "title"=>"EDIT PROJECT 3", "description"=>"I AM GONNA CRY", "project_link"=>"github.com", "img_link"=>"https://media.giphy.com/media/F26sH3mvzZzNK/giphy.gif", "project"=>{"id"=>"5", "title"=>"EDIT PROJECT 3", "description"=>"I AM GONNA CRY", "project_link"=>"github.com", "img_link"=>"https://media.giphy.com/media/F26sH3mvzZzNK/giphy.gif"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND "projects"."id" = $2 LIMIT $3[0m  [["user_id", 2], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:22
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[36mProject Update (3.6ms)[0m  [1m[33mUPDATE "projects" SET "title" = $1, "description" = $2, "img_link" = $3, "updated_at" = $4 WHERE "projects"."id" = $5[0m  [["title", "EDIT PROJECT 3"], ["description", "I AM GONNA CRY"], ["img_link", "https://media.giphy.com/media/F26sH3mvzZzNK/giphy.gif"], ["updated_at", "2019-02-27 09:58:29.367062"], ["id", 5]]
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[35m (27.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:27
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:29
+Completed 200 OK in 68ms (Views: 5.7ms | ActiveRecord: 35.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 17:58:29 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:26:09 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:26:10 +0800
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:26:10 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:26:10 +0800
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:26:10 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:26:10 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:28:35 +0800
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:28:35 +0800
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:28:35 +0800
+  
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:28:36 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:28:36 +0800
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:28:36 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 18:28:41 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:30:56 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:30:56 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:30:56 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 18:30:56 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:30:56 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:30:57 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:30:57 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:31:07 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:31:07 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:31:07 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:31:07 +0800
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:31:07 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:31:07 +0800
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:32:16 +0800
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:32:16 +0800
+  
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:32:16 +0800
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 18:32:16 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (37.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 79ms (Views: 0.8ms | ActiveRecord: 71.7ms)
+
+
+Started GET "/user/src/index.js" for 127.0.0.1 at 2019-02-27 18:32:17 +0800
+  
+Started GET "/user/Main.js" for 127.0.0.1 at 2019-02-27 18:32:17 +0800
+ActionController::RoutingError (No route matches [GET] "/user/src/index.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/user/Main.js"):
+  
+Started GET "/user/App.js" for 127.0.0.1 at 2019-02-27 18:32:17 +0800
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/user/App.js"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-27 18:32:24 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/logo/logo-fitter-top.png"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-27 18:32:28 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"new@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"new@user.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "new@user.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 148ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 18:32:30 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 18:32:36 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 18:32:37 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 13ms (Views: 1.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 18:32:39 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 18:32:42 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 0.8ms)
+
+

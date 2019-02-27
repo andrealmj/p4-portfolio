@@ -11,9 +11,9 @@ class About extends Component {
         bio: null,
         name: null,
         email: null,
-        phone: null,
-        everythingIsOk: false
-      }
+        phone: null
+      },
+      everythingIsOk: false
     };
   }
 
@@ -30,7 +30,8 @@ class About extends Component {
           bio: this.state.bio,
           name: this.state.name,
           email: this.state.email,
-          phone: this.state.phone
+          phone: this.state.phone,
+          id: this.state.id
         }
       }
     }).then(val => {
@@ -55,10 +56,16 @@ class About extends Component {
             <br />
             {this.state.about.bio}
             <hr />
+
+            ID: {this.state.about.id}
+            <br />
+
             Name: {this.state.about.name}
             <br />
+
             E-mail: {this.state.about.email}
             <br />
+
             Phone number: {this.state.about.phone}
             <br />
           </div>
@@ -70,7 +77,7 @@ class About extends Component {
             data-toggle="modal"
             data-target="#exampleModalScrollable"
           >
-            EDIT MODAL
+            Edit Info
           </button>
 
           {/* Modal */}
