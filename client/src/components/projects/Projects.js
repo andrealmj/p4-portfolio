@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
 import AddProject from "./AddProject";
+import EditProject from "./EditProject";
 
 class Projects extends Component {
   constructor(props) {
@@ -47,12 +48,58 @@ class Projects extends Component {
       const projectsList = projects.map(project => {
         return (
           <div key={project.id}>
-            <button class="btn btn-outline-dark float-right">
-              Delete this project
+            <button class="btn btn-danger float-right">
+              Delete
             </button>
-            <button class="btn btn-outline-dark float-right">
-              Edit this project
-            </button>
+
+            {/* Button Trigger Modal for EDITING A PROJECT (change data-target)*/}
+            <button
+            type="button"
+            className="btn btn-primary float-right"
+            data-toggle="modal"
+            data-target="#example2ModalScrollable"
+          >
+            Edit
+          </button>
+
+          {/* Modal for EDITING A PROJECT (change id, aria-labelledby)*/}
+          <div
+            className="modal fade"
+            id="example2ModalScrollable"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="example2ModalScrollableTitle"
+            aria-hidden="true"
+          >
+            <div
+              className="modal-dialog modal-dialog-scrollable"
+              role="document"
+            >
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="example2ModalScrollableTitle">
+                    Edit This Project
+                  </h5>
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <EditProject existingProjectData={this.state.project_data}/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
             <li>Title: {project.title}</li>
             <li>Description: {project.description}</li>
             <li>Project Link: {project.project_link}</li>
@@ -70,7 +117,7 @@ class Projects extends Component {
           <h1>My Projects</h1>
           <br />
 
-          {/* Button Trigger Modal */}
+          {/* Button Trigger Modal for ADDING A PROJECT (change data-target)*/}
           <button
             type="button"
             className="btn btn-primary"
@@ -80,7 +127,7 @@ class Projects extends Component {
             Add A Project
           </button>
 
-          {/* Modal */}
+          {/* Modal for ADDING A PROJECT (change id, aria-labelledby)*/}
           <div
             className="modal fade"
             id="exampleModalScrollable"
@@ -113,6 +160,7 @@ class Projects extends Component {
               </div>
             </div>
           </div>
+
           <hr />
 
           <ul>{projectsList}</ul>

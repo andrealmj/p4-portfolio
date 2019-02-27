@@ -15,7 +15,10 @@ class AboutsController < ApplicationController
   end
 
   def create
-      current_user.create(name: params[:name], bio: params[:bio], email: params[:email], phone: params[:phone])
+      current_user.name=params[:name]
+      current_user.bio=params[:bio]
+      current_user.email=params[:email]
+      current_user.phone=params[:phone]
   end
 
   def update
