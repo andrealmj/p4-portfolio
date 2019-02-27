@@ -5,12 +5,14 @@ class EditAbout extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            bio: null,
-            name: null,
-            email: null,
-            phone: null,
+            bio: "",
+            name: "",
+            email: "",
+            phone: "",
             emailMessage: "",
-            phoneMessage: ""
+            phoneMessage: "",
+            bioMessage: "",
+            nameMessage: ""
         };
 
         this.handleAddItem = this.handleAddItem.bind(this);
@@ -32,16 +34,26 @@ class EditAbout extends Component {
     handleAddItem(e) {
         this.setState({
             emailMessage: "",
-            phoneMessage: ""
+            phoneMessage: "",
+            bioMessage: "",
+            nameMessage: ""
         });
 
         let everythingIsOk = true;
 
-        if ( !this.state.email.includes("@") ) {
+        if (this.state.name === "") {
+            this.setState({ nameMessage: "Please enter your name!" });
+            everythingIsOk = false;
+        }
+
+        if (this.state.bio === "") {
+            this.setState({ bioMessage: "Please tell us about yourself." });
+            everythingIsOk = false;
+        }
+        if ( this.state.email === "" || !this.state.email.includes("@") ) {
             this.setState({
                 emailMessage: "Please enter a valid email address."
             });
-            e.preventDefault();
             everythingIsOk = false;
         }
 
@@ -49,7 +61,6 @@ class EditAbout extends Component {
             this.setState({
                 phoneMessage: "Please enter a valid Singapore phone number (8 numbers)"
             });
-            e.preventDefault();
             everythingIsOk = false;
         }
 
@@ -81,11 +92,17 @@ class EditAbout extends Component {
                     <form onSubmit={this.handleAddItem} onChange={this.handleChange}>
                     
                     Name: <input name="name" type="text" placeholder={this.props.existingAbout.name}/>
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.nameMessage}
+                    </div>
                     <br />
     
                     <div className="form-group blue-border-focus">
                         <label for="exampleFormControlTextarea5">About me:</label>
                         <textarea className="form-control" id="exampleFormControlTextarea5" rows="3" name="bio" placeholder={this.props.existingAbout.bio}></textarea>
+                    </div>
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.bioMessage}
                     </div>
                     <br />
     

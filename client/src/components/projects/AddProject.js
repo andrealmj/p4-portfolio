@@ -89,21 +89,33 @@ class AddProject extends Component {
             <div>
                 <form onSubmit={this.handleAddItem} onChange={this.handleChange}>
                     Title: <input name="title" type="text" />
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.titleMessage}
+                    </div>
                     <br />
 
                     <div className="form-group blue-border-focus">
                         <label for="exampleFormControlTextarea5">Description:</label>
                         <textarea className="form-control" id="exampleFormControlTextarea5" rows="3" name="description"></textarea>
                     </div>
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.descriptionMessage}
+                    </div>
                     <br />
 
                     Project Link: <input name="project_link" type="text" />
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.projectLinkMessage}
+                    </div>
                     <br />
 
                     Screenshot Link: <input name="img_link" type="text" placeholder="Eventually utilise Cloudinary here" />
-                    <br />
+                    <div style={{ fontSize: 12 + "px", height: 15 + "px" }}>
+                        {this.state.imgLinkMessage}
+                    </div>
+                    <hr />
 
-                    <button inputType="submit" class="btn btn-primary">Add Project</button>
+                    <button inputType="submit" class="btn btn-primary float-right">Add Project</button>
 
                 </form>
             </div>
