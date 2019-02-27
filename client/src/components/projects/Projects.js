@@ -14,6 +14,8 @@ class Projects extends Component {
         img_link: null
       }
     };
+
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   componentDidMount() {
@@ -40,6 +42,17 @@ class Projects extends Component {
     });
   }
 
+  handleDelete(e) {
+    console.log(e.target.dataset.id);
+    Axios({
+        method: "DELETE",
+        url: `/projects/${e.target.dataset.id}`
+    }).then( val => {
+        console.log(val.status);
+        this.updateFromDb();
+    })
+  }
+
   render() {
     const projects = this.state.project_data;
     console.log("PROJECT DATA", projects);
@@ -48,57 +61,56 @@ class Projects extends Component {
       const projectsList = projects.map(project => {
         return (
           <div key={project.id}>
-            <button class="btn btn-danger float-right">
-              Delete
-            </button>
+            <button class="btn btn-danger float-right" data-id={project.id} onClick={this.handleDelete}>Delete</button>
 
             {/* Button Trigger Modal for EDITING A PROJECT (change data-target)*/}
             <button
-            type="button"
-            className="btn btn-primary float-right"
-            data-toggle="modal"
-            data-target="#example2ModalScrollable"
-          >
-            Edit
-          </button>
-
-          {/* Modal for EDITING A PROJECT (change id, aria-labelledby)*/}
-          <div
-            className="modal fade"
-            id="example2ModalScrollable"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="example2ModalScrollableTitle"
-            aria-hidden="true"
-          >
-            <div
-              className="modal-dialog modal-dialog-scrollable"
-              role="document"
+              type="button"
+              className="btn btn-primary float-right"
+              data-toggle="modal"
+              data-target="#example2ModalScrollable"
             >
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title" id="example2ModalScrollableTitle">
-                    Edit This Project
-                  </h5>
-                  <button
-                    type="button"
-                    className="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div className="modal-body">
-                  <EditProject existingProjectData={this.state.project_data}/>
+              Edit
+            </button>
+
+            {/* Modal for EDITING A PROJECT (change id, aria-labelledby)*/}
+            <div
+              className="modal fade"
+              id="example2ModalScrollable"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="example2ModalScrollableTitle"
+              aria-hidden="true"
+            >
+              <div
+                className="modal-dialog modal-dialog-scrollable"
+                role="document"
+              >
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5
+                      className="modal-title"
+                      id="example2ModalScrollableTitle"
+                    >
+                      Edit This Project
+                    </h5>
+                    <button
+                      type="button"
+                      className="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div className="modal-body">
+                    <EditProject
+                      existingProjectData={this.state.project_data}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-
-
-
 
             <li>Title: {project.title}</li>
             <li>Description: {project.description}</li>
@@ -167,11 +179,11 @@ class Projects extends Component {
         </div>
       );
     } else {
+      //if no project data exists (i.e. user has no projects)
       return (
-          <div>
-              <h1>My Projects</h1>
+        <div>
+          <h1>My Projects</h1>
           <br />
-
           {/* Button Trigger Modal for ADDING A PROJECT (change data-target)*/}
           <button
             type="button"
@@ -181,7 +193,6 @@ class Projects extends Component {
           >
             Add A Project
           </button>
-
           {/* Modal for ADDING A PROJECT (change id, aria-labelledby)*/}
           <div
             className="modal fade"
@@ -215,13 +226,10 @@ class Projects extends Component {
               </div>
             </div>
           </div>
-
           <hr />
-
           You currently have no projects. Add some!
-          
-          </div>
-      )
+        </div>
+      );
     }
   }
 }

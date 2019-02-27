@@ -28,9 +28,7 @@ class ProjectsController < ApplicationController
     end
 
     def destroy
-        current_user.project.destroy
-
-        redirect_to project_path
+        current_user.project.destroy(params[:id])
     end
 
     private
