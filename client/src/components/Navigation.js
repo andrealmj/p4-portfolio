@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Axios from "axios";
 import { Redirect, NavLink } from "react-router-dom";
 
+import Logo from "../../src/logo-crop-trbg.png";
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +33,7 @@ class Navigation extends Component {
         <div>
           <nav className="navbar navbar-expand-lg navbar-light sticky" style={{backgroundColor: "#FDD101"}}>
             <NavLink className="navbar-brand" to="/">
-              Portfolio Builder
+              <img src={Logo} style={{width:"43px", height:"43px"}} alt="logo" />Portfolio Builder
             </NavLink>
             <button
               className="navbar-toggler"
