@@ -167,7 +167,61 @@ class Projects extends Component {
         </div>
       );
     } else {
-      return <div>Loading...</div>;
+      return (
+          <div>
+              <h1>My Projects</h1>
+          <br />
+
+          {/* Button Trigger Modal for ADDING A PROJECT (change data-target)*/}
+          <button
+            type="button"
+            className="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModalScrollable"
+          >
+            Add A Project
+          </button>
+
+          {/* Modal for ADDING A PROJECT (change id, aria-labelledby)*/}
+          <div
+            className="modal fade"
+            id="exampleModalScrollable"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true"
+          >
+            <div
+              className="modal-dialog modal-dialog-scrollable"
+              role="document"
+            >
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalScrollableTitle">
+                    Add A Project
+                  </h5>
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <AddProject />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          You currently have no projects. Add some!
+          
+          </div>
+      )
     }
   }
 }

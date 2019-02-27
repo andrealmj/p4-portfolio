@@ -7555,3 +7555,161 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 3.3ms)
 
 
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-27 13:54:37 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 12ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/logo/logo-fitter-top.png"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.2) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.2) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-27 13:54:44 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"q@q.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"q@q.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "q@q.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 142ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 13:54:46 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 15ms (Views: 1.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/abouts" for 127.0.0.1 at 2019-02-27 13:55:17 +0800
+Processing by AboutsController#create as HTML
+  Parameters: {"bio"=>"Hi I'm Q and this is where you can read about me and what I do.", "name"=>"Q", "email"=>"q@q.com", "phone"=>"91918282", "about"=>{"bio"=>"Hi I'm Q and this is where you can read about me and what I do.", "name"=>"Q", "email"=>"q@q.com", "phone"=>"91918282"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/abouts_controller.rb:22
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "name" = $1, "bio" = $2, "phone" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["name", "Q"], ["bio", "Hi I'm Q and this is where you can read about me and what I do."], ["phone", "91918282"], ["updated_at", "2019-02-27 05:55:18.008258"], ["id", 4]]
+  ↳ app/controllers/abouts_controller.rb:22
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/abouts_controller.rb:22
+No template found for AboutsController#create, rendering head :no_content
+Completed 204 No Content in 76ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 13:55:18 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 13:55:45 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 13:56:56 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 13:57:21 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2019-02-27 13:57:52 +0800
+Processing by ProjectsController#create as HTML
+  Parameters: {"title"=>"first project by Q", "description"=>"Q's first project omg", "project_link"=>"http://www.github.com", "img_link"=>"https://previews.123rf.com/images/studiostoks/studiostoks1603/studiostoks160300093/53293815-surprised-omg-shocked-woman-pop-art-retro-style-the-girl-in-the-emotions-wow-effect.jpg", "project"=>{"title"=>"first project by Q", "description"=>"Q's first project omg", "project_link"=>"http://www.github.com", "img_link"=>"https://previews.123rf.com/images/studiostoks/studiostoks1603/studiostoks160300093/53293815-surprised-omg-shocked-woman-pop-art-retro-style-the-girl-in-the-emotions-wow-effect.jpg"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[36mProject Create (0.9ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "project_link", "img_link", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "first project by Q"], ["description", "Q's first project omg"], ["project_link", "http://www.github.com"], ["img_link", "https://previews.123rf.com/images/studiostoks/studiostoks1603/studiostoks160300093/53293815-surprised-omg-shocked-woman-pop-art-retro-style-the-girl-in-the-emotions-wow-effect.jpg"], ["created_at", "2019-02-27 05:57:52.057607"], ["updated_at", "2019-02-27 05:57:52.057607"], ["user_id", 4]]
+  ↳ app/controllers/projects_controller.rb:17
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:17
+No template found for ProjectsController#create, rendering head :no_content
+Completed 204 No Content in 69ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 13:57:52 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-02-27 13:58:02 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 13ms (Views: 6.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-02-27 13:58:04 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.8ms)
+
+
