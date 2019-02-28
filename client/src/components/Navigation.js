@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Axios from "axios";
 import { Redirect, NavLink } from "react-router-dom";
 
-import Logo from "../../src/logo-crop-trbg.png";
+import Logo from "./logo-crop-trbg.png";
 
 class Navigation extends Component {
   constructor(props) {

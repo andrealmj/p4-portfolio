@@ -18,13 +18,13 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    this.updateFromDb();
+    this.updateFromDb(this.props.match.params.id);
   }
 
-  updateFromDb() {
+  updateFromDb(userId) {
     Axios({
       method: "GET",
-      url: "/users/:id",
+      url: `/users/${userId}`,
       data: {
         project_data: {
           title: this.state.title,
@@ -37,7 +37,8 @@ class Projects extends Component {
     }).then(val => {
       console.log(val.data.project_data);
       this.setState({
-        project_data: val.data.project_data
+        project_data: val.data.project_data,
+        name: val.data.about.name
       });
     });
   }
@@ -66,8 +67,8 @@ class Projects extends Component {
       });
 
       return (
-        <div>
-          <h1>My Projects</h1>
+        <div style={{margin: "40px"}}>
+          <h5>My Projects</h5>
           <br />
 
           <ul>{projectsList}</ul>
@@ -76,7 +77,7 @@ class Projects extends Component {
     } else {
       //if no project data exists (i.e. user has no projects)
       return (
-        <div>
+        <div style={{margin: "40px"}}>
           <h1>My Projects</h1>
           <hr />
           

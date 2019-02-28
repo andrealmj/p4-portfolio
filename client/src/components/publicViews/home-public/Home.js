@@ -13,18 +13,19 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.updateFromDb();
+    console.log("quack!!! user id is:", this.props.match.params.id);
+    this.updateFromDb(this.props.match.params.id);
   }
 
-  updateFromDb() {
+  updateFromDb(userId) {
     Axios({
       method: "GET",
-      url: "/abouts",
+      url: `/users/${userId}`,
       data: {
         about: {
           name: this.state.name
         },
-        everythingIsOk: false
+        everythingIsOk: true
       }
     }).then(val => {
       console.log(val.data.about);
@@ -38,8 +39,8 @@ class Home extends Component {
   render() {
     if (this.state.everythingIsOk) {
       return (
-        <div>
-          Welcome to {this.state.about.name}'s portfolio page.
+        <div style={{margin: "40px"}}>
+          <h5>Welcome to {this.state.about.name}'s portfolio page.</h5>
         </div>
       );
     } else {

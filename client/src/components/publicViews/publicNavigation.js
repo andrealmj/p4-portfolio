@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Redirect, NavLink } from "react-router-dom";
 import Axios from "axios";
 
+import Logo from "../logo-crop-trbg.png";
+
 class PublicNavigation extends Component {
   constructor(props) {
     super(props);
@@ -13,18 +15,19 @@ class PublicNavigation extends Component {
   }
 
   componentDidMount() {
-    this.updateFromDb();
+    console.log("abcdefg id:", this.props.abcde.params.id)
+    this.updateFromDb(this.props.abcde.params.id);
   }
 
-  updateFromDb() {
+  updateFromDb(userId) {
     Axios({
       method: "GET",
-      url: "/users/:id",
+      url: `/users/${userId}`,
       data: {
         userId: this.state.userId
       }
     }).then(val => {
-      console.log("VAL DATA andrea", val.data);
+      console.log("VAL DATA andrea12312", val.data);
       this.setState({
         userId: val.data.about.id
       });
@@ -32,12 +35,12 @@ class PublicNavigation extends Component {
   }
   
   render() {
-    console.log(this.state.userId);
+    console.log("user ID is: ",this.state.userId);
     return (
         <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light sticky">
+          <nav className="navbar navbar-expand-lg navbar-light sticky" style={{backgroundColor: "#FDD101"}}>
             <NavLink className="navbar-brand" to={`/users/${this.state.userId}`}>
-              Portfolio Builder
+              <img src={Logo} style={{width:"43px", height:"43px"}} alt="logo" />Portfolio Builder
             </NavLink>
             <button
               className="navbar-toggler"

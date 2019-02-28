@@ -11,7 +11,7 @@ import Error from "../Error";
 
 const PublicViews = ({ match }) => (
     <div>
-        <PublicNavigation />
+        <PublicNavigation abcde={match}/>
 
         <Switch>
             <Route exact path="/users/:id" component={Home} />

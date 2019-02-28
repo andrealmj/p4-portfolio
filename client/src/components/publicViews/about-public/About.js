@@ -18,13 +18,14 @@ class About extends Component {
   }
 
   componentDidMount() {
-    this.updateFromDb();
+    console.log("HEEEEEEI", this.props.match);
+    this.updateFromDb(this.props.match.params.id);
   }
 
-  updateFromDb() {
+  updateFromDb(userId) {
     Axios({
       method: "GET",
-      url: "/users/:id",
+      url: `/users/${userId}`,
       data: {
         about: {
           bio: this.state.bio,
@@ -49,12 +50,11 @@ class About extends Component {
     if (this.state.everythingIsOk) {
       return (
         <div>
-          <div className="about">
-            <h1>About Me:</h1>
+          <div className="about" style={{margin: "40px"}}>
+            <h5>About Me:</h5>
             <br />
-            <h3>ALLOW IMAGE UPLOAD HERE !!! Cloudinary</h3>
             <br />
-            {this.state.about.bio}
+            <cite>{this.state.about.bio}</cite>
             <hr />
 
             ID: {this.state.about.id}

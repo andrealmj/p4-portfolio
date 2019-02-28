@@ -3,8 +3,8 @@ import React, { Component } from "react";
 class Contact extends Component {
     render() {
         return (
-            <div>
-                <h1>Get in touch!</h1>
+            <div style={{margin: "40px"}}>
+                <h5>Get in touch!</h5>
                 <form>
                 <input type="text" placeholder="Your name" /><br />
                 <input type="text" placeholder="Your email" /><br />
