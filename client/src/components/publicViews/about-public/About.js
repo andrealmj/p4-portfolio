@@ -74,8 +74,8 @@ class About extends Component {
       );
     } else {
       return (
-        <div>
-          <h1>About Me:</h1>
+        <div style={{margin: "40px"}}>
+          <h5>About Me:</h5>
           <br />
           Loading...
         </div>

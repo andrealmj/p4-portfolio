@@ -54,13 +54,14 @@ class Projects extends Component {
         return (
           <div key={project.id}>
 
-            <li>Title: {project.title}</li>
-            <li>Description: {project.description}</li>
-            <li>Project Link: {project.project_link}</li>
             <li>
-              Screenshot:{" "}
-              <img src={project.img_link} style={{ maxWidth: "200px" }} />
+              <img src={project.img_link} style={{ maxWidth: "200px" }} alt="screenshot" />
             </li>
+
+            <li><b>Title</b>: {project.title}</li>
+            <li><b>Description</b>: {project.description}</li>
+            <li><b>Project Link</b>: {project.project_link}</li>
+            
             <hr />
           </div>
         );
@@ -78,7 +79,7 @@ class Projects extends Component {
       //if no project data exists (i.e. user has no projects)
       return (
         <div style={{margin: "40px"}}>
-          <h1>My Projects</h1>
+          <h5>My Projects</h5>
           <hr />
           
           {this.state.name} currently has no projects.

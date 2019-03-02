@@ -116,7 +116,7 @@ class Projects extends Component {
             </div>
 
             <li>
-              <img src={project.img_link} style={{ maxWidth: "200px" }} />
+              <img src={project.img_link} style={{ maxWidth: "200px" }} alt="screenshot" />
             </li>
             <li><b>Title</b>: {project.title}</li>
             <li><b>Description</b>: {project.description}</li>
