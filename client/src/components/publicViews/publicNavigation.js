@@ -9,7 +9,8 @@ class PublicNavigation extends Component {
     super(props);
     this.state = {
       userId: null,
-      email: null
+      email: null,
+      name: null
     };
 
     this.updateFromDb = this.updateFromDb.bind(this);
@@ -17,22 +18,24 @@ class PublicNavigation extends Component {
 
   componentDidMount() {
     console.log("abcdefg id:", this.props.abcde.params.id)
-    this.updateFromDb(this.props.abcde.params.id, this.props.abcde.params.email);
+    this.updateFromDb(this.props.abcde.params.id, this.props.abcde.params.email, this.props.abcde.params.name);
   }
 
-  updateFromDb(userId, email) {
+  updateFromDb(userId) {
     Axios({
       method: "GET",
       url: `/users/${userId}`,
       data: {
         userId: this.state.userId,
-        email: this.state.email
+        email: this.state.email,
+        name: this.state.name
       }
     }).then(val => {
       console.log("VAL DATA andrea12312", val.data);
       this.setState({
         userId: val.data.about.id,
-        email: val.data.about.email
+        email: val.data.about.email,
+        name: val.data.about.name
       });
     })
   }
@@ -81,7 +84,7 @@ class PublicNavigation extends Component {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href={`mailto:${this.state.email}?subject=Hello&body=We want to hire you`}>
+                  <a className="nav-link" href={`mailto:${this.state.email}?subject=Hello ${this.state.name}!&body=I've seen your portfolio website and think it's quite impressive. I want to hire you! Let's talk.`}>
                     Contact
                   </a>
                 </li>
