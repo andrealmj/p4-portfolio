@@ -69,7 +69,7 @@ class Projects extends Component {
 
       return (
         <div style={{margin: "40px"}}>
-          <h5>My Projects</h5>
+          <h5>Projects</h5>
           <br />
 
           <ul>{projectsList}</ul>

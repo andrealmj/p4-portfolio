@@ -51,14 +51,11 @@ class About extends Component {
       return (
         <div>
           <div className="about" style={{margin: "40px"}}>
-            <h5>About Me:</h5>
+            <h5>About:</h5>
             <br />
             <br />
             <cite>{this.state.about.bio}</cite>
             <hr />
-
-            ID: {this.state.about.id}
-            <br />
 
             Name: {this.state.about.name}
             <br />

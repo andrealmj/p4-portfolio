@@ -73,13 +73,13 @@ class PublicNavigation extends Component {
 
                 <li className="nav-item">
                   <NavLink className="nav-link" to={`/users/${this.state.userId}/abouts`}>
-                    About Me
+                    About
                   </NavLink>
                 </li>
 
                 <li className="nav-item">
                   <NavLink className="nav-link" to={`/users/${this.state.userId}/projects`}>
-                    My Projects
+                    Projects
                   </NavLink>
                 </li>
 

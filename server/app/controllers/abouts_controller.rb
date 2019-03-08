@@ -12,6 +12,7 @@ class AboutsController < ApplicationController
       current_user.bio=params[:bio]
       current_user.email=params[:email]
       current_user.phone=params[:phone]
+      current_user.username=params[:username]
       current_user.save
   end
 
