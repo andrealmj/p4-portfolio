@@ -50,6 +50,28 @@ class Contact extends Component {
                     <textarea rows="4" cols="50" placeholder="Message" /><br />
                     <button type="submit">Submit</button>
                     </form>
+
+                    <form method="POST" action="http://localhost:3000/andrealmj@live.com">
+                        <div class="form__input half">
+                            <label for="name">Name</label>
+                            <input type="text" name="Name" autocomplete="name" required />
+                        </div>
+
+                        <div class="form__input input half">
+                                <label for="email">Email</label>
+                                <input type="email" name="Email" autocomplete="email" required />
+                        </div>
+
+                        <div class="form__input">
+                                <label for="message">Message</label>
+                                <textarea type="text" name="Message" rows="7" autocomplete="message" required></textarea>
+                        </div>
+
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+
+                <a href='mailto:me@company.com?subject=Hello&body=We want to hire you'>Contact</a>
+
                 </div>
             )
         } else {

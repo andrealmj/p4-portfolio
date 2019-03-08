@@ -17,14 +17,18 @@ class Login extends Component {
   }
 
   componentDidMount() {
-    Axios({
-      method: "GET",
-      url: "/users/validate"
-    }).then( res => {
-      if (res.data.success) {
-        this.setState({ isLoggedIn: true });
-      }
-    })
+    if (localStorage.length > 0) {
+      Axios({
+        method: "GET",
+        url: "/users/validate"
+      }).then( res => {
+        if (res.data.success) {
+          this.setState({ isLoggedIn: true });
+        } else {
+          localStorage.clear();
+        }
+      });
+    }
   }
 
   handleSubmit(e) {
@@ -67,15 +71,18 @@ class Login extends Component {
 				method: "POST",
 				url: "/users/sign_in",
 				data: { user: { email: this.state.email, password: this.state.password } }
-			}).then( val => 
-				{this.setState({ isLoggedIn: true });
-				console.log("new user successfully logged in!")}
-			).catch ( err =>
+			}).then( val => {
+        if (val.status === 200) {
+          localStorage.setItem("isLoggedIn", "true");
+          {this.setState({ isLoggedIn: true });
+			  	console.log("new user successfully logged in!")}
+        }
+      }).catch ( err =>
 				//if cannot create new acc (eg username alr exists), display error msg
-				{this.setState({
-          message: "Sorry. Invalid username or password. Please try again."
-				});
-				console.log("Error in creating new user.", err)}
+				{
+          this.setState({message: "Sorry. Invalid username or password. Please try again."});
+          console.log("Error in creating new user.", err)
+        }
 			))
   }
 
@@ -85,14 +92,20 @@ class Login extends Component {
       method: "POST",
       url: "users/sign_in",
       data: { user: { email: this.state.email, password: this.state.password } }
-    }).then( val =>
-      {this.setState({ isLoggedIn: true });
-      console.log("logged in successfully")}
-		)
+    }).then( val => {
+      if (val.status === 200) {
+        localStorage.setItem("isLoggedIn", "true");
+        this.setState({ isLoggedIn: true });
+        console.log("logged in successfully");
+      }
+    }).catch(err => {
+      this.setState({ message: "Sorry. Invalid username or password. Please try again."});
+    })
   }
 
   render() {
     if (this.state.isLoggedIn) {
+      console.log("sum1 is logged in. redirecting to MAIN")
       return <Redirect to="/" />;
     } else {
       return (

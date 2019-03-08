@@ -8,7 +8,8 @@ class PublicNavigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userId: null
+      userId: null,
+      email: null
     };
 
     this.updateFromDb = this.updateFromDb.bind(this);
@@ -16,20 +17,22 @@ class PublicNavigation extends Component {
 
   componentDidMount() {
     console.log("abcdefg id:", this.props.abcde.params.id)
-    this.updateFromDb(this.props.abcde.params.id);
+    this.updateFromDb(this.props.abcde.params.id, this.props.abcde.params.email);
   }
 
-  updateFromDb(userId) {
+  updateFromDb(userId, email) {
     Axios({
       method: "GET",
       url: `/users/${userId}`,
       data: {
-        userId: this.state.userId
+        userId: this.state.userId,
+        email: this.state.email
       }
     }).then(val => {
       console.log("VAL DATA andrea12312", val.data);
       this.setState({
-        userId: val.data.about.id
+        userId: val.data.about.id,
+        email: val.data.about.email
       });
     })
   }
@@ -78,9 +81,9 @@ class PublicNavigation extends Component {
                 </li>
 
                 <li className="nav-item">
-                  <NavLink className="nav-link" to={`/users/${this.state.userId}/contacts`}>
+                  <a className="nav-link" href={`mailto:${this.state.email}?subject=Hello&body=We want to hire you`}>
                     Contact
-                  </NavLink>
+                  </a>
                 </li>
 
               </ul>

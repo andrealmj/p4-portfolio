@@ -29377,3 +29377,1565 @@ Processing by PublicsController#index as HTML
 Completed 200 OK in 17ms (Views: 5.8ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:03:21 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:03:21 +0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:03:23 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:03:23 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-07 23:03:29 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 401 Unauthorized in 20ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:02 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:02 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:46 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:46 +0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (17.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 25ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:08:53 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:53 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:53 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:53 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:08:54 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:54 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:54 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:54 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:08:55 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:55 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:55 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:55 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:08:56 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:56 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:56 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:56 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:08:57 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:57 +0800
+Processing by UsersController#validate as HTML
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:08:57 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:08:57 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#validate as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:09:07 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:09:07 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-07 23:09:15 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 401 Unauthorized in 11ms (ActiveRecord: 6.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-03-07 23:10:10 +0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test@test.com"], ["encrypted_password", "$2a$11$ulNuxE.acIcyk7q/rolnbO9UIvHZFyFpdTP1PQerWVyMI/uXLwaOK"], ["created_at", "2019-03-07 15:10:10.260610"], ["updated_at", "2019-03-07 15:10:10.260610"]]
+  ↳ app/controllers/registrations_controller.rb:7
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/registrations_controller.rb:7
+Completed 200 OK in 156ms (Views: 0.4ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-07 23:10:10 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 123ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:10:10 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:10:10 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:11:04 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 13ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:11:04 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-07 23:11:09 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"user@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"user@user.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@user.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 140ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:11:09 +0800
+Processing by UsersController#validate as HTML
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:11:09 +0800
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:11:13 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-03-07 23:11:22 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 31ms (Views: 11.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:11:28 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:17:25 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 20ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:17:25 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:17:44 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:17:44 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:20:18 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:20:18 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:22:12 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:22:12 +0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:24:17 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:24:17 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:24:36 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:24:36 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:24:50 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:24:50 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:24:54 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:24:54 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-07 23:25:00 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 176ms (Views: 0.3ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:25:00 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:25:00 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-07 23:25:06 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:25:06 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:47:47 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:47:47 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:48:21 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:48:21 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-07 23:49:39 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-07 23:49:39 +0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[35m (16.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-07 23:49:49 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-08 22:41:06 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (7.7ms)
+Completed 200 OK in 28ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:41:07 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:41:07 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:46:57 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:46:57 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:9: syntax error, unexpected '{', expecting keyword_end
+      render :json {
+                   ^
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+        "about"=>current_user.find(params[:id]...
+               ^~
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+...current_user.find(params[:id]),
+...                              ^
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+        "project_data"=>current_user.find(params[:id]...
+                      ^~
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:12: syntax error, unexpected '}', expecting keyword_end
+      }
+      ^):
+  
+app/controllers/users_controller.rb:9: syntax error, unexpected '{', expecting keyword_end
+app/controllers/users_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/users_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+app/controllers/users_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+app/controllers/users_controller.rb:12: syntax error, unexpected '}', expecting keyword_end
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:50:50 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:50:50 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:9: syntax error, unexpected '{', expecting keyword_end
+      render :json {
+                   ^
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+        "about"=>current_user.find(params[:id]...
+               ^~
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+...current_user.find(params[:id]),
+...                              ^
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+        "project_data"=>current_user.find(params[:id]...
+                      ^~
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:12: syntax error, unexpected '}', expecting keyword_end
+      }
+      ^):
+  
+app/controllers/users_controller.rb:9: syntax error, unexpected '{', expecting keyword_end
+app/controllers/users_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/users_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+app/controllers/users_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+app/controllers/users_controller.rb:12: syntax error, unexpected '}', expecting keyword_end
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:51:13 +0800
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:51:13 +0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:9: syntax error, unexpected '{', expecting keyword_end
+      render :json {
+                   ^
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+        "about"=>current_user.find(params[:id]...
+               ^~
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+...current_user.find(params[:id]),
+...                              ^
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+        "project_data"=>current_user.find(params[:id]...
+                      ^~
+/home/andrea/Documents/GA/p4-portfolio/server/app/controllers/users_controller.rb:12: syntax error, unexpected '}', expecting keyword_end
+      }
+      ^):
+  
+app/controllers/users_controller.rb:9: syntax error, unexpected '{', expecting keyword_end
+app/controllers/users_controller.rb:10: syntax error, unexpected =>, expecting keyword_end
+app/controllers/users_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+app/controllers/users_controller.rb:11: syntax error, unexpected =>, expecting keyword_end
+app/controllers/users_controller.rb:12: syntax error, unexpected '}', expecting keyword_end
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 95ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:51:16 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-03-08 22:51:17 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 7.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-08 22:51:18 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-08 22:51:26 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:54:07 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:54:07 +0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 35ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:54:47 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:54:47 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:54:52 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:54:52 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:55:38 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:55:38 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:55:42 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:55:42 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-08 22:55:46 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:55:52 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:55:52 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-08 22:56:02 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:56:30 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:56:30 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-08 22:56:32 +0800
+Processing by SessionsController#destroy as HTML
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-08 22:57:06 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"andrea@o.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@o.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@o.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 401 Unauthorized in 24ms (ActiveRecord: 5.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-08 22:57:15 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 152ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:57:15 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:57:15 +0800
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Processing by UsersController#validate as HTML
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-08 22:57:15 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f8158047190>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:57:17 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 11ms (Views: 1.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-03-08 22:57:20 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 8]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 12ms (Views: 2.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:57:25 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-03-08 22:57:26 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 8]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 9ms (Views: 2.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:57:27 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-03-08 22:58:07 +0800
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 13ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:58:07 +0800
+Processing by UsersController#validate as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-03-08 22:58:12 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"user@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"user@user.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@user.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5
+Completed 200 OK in 172ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 22:58:12 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 22:58:12 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 4.4ms)
+
+
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-08 22:58:12 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f8150341d58>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/abouts" for 127.0.0.1 at 2019-03-08 23:00:19 +0800
+Processing by AboutsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 23:44:44 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-08 23:44:44 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f81581a6d60>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:44:56 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 19ms (Views: 11.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:44:56 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:44:59 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (2.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 18ms (Views: 6.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:46:49 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:46:49 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:47:09 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:47:09 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2019-03-08 23:48:33 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"2", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2019-03-08 23:48:33 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"2", "public"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 2]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-08 23:57:44 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-08 23:57:44 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f8158323a58>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:57:52 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 9ms (Views: 2.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-08 23:57:52 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/andrealmj@live.com" for 127.0.0.1 at 2019-03-08 23:58:03 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/andrealmj@live.com"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 00:00:20 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 00:00:20 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 00:00:20 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 00:00:21 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f8158380050>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:37:06 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 13ms (Views: 2.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:37:06 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:37:06 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:37:06 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:44:06 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:44:06 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:44:09 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:44:09 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:59:07 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:59:07 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 01:59:12 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 01:59:13 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f8158333f70>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 01:59:13 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 01:59:13 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x000055eb8bbcf6e8>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 01:59:17 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 01:59:18 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2019-03-09 01:59:18 +0800
+Processing by ProjectsController#index as HTML
+  Parameters: {"project"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/projects_controller.rb:5
+Completed 200 OK in 20ms (Views: 5.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 01:59:21 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:59:40 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 01:59:40 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 01:59:41 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 01:59:41 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 01:59:41 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f81541267e0>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:03:14 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:03:14 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 02:03:14 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 02:03:14 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 02:03:14 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f8158463d00>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:03:21 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/mailto:1" for 127.0.0.1 at 2019-03-09 02:09:59 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"mailto:1", "public"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+Completed 404 Not Found in 8ms (ActiveRecord: 5.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=mailto:1):
+  
+app/controllers/publics_controller.rb:5:in `index'
+Started GET "/users/mailto:1" for 127.0.0.1 at 2019-03-09 02:09:59 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"mailto:1", "public"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=mailto:1):
+  
+app/controllers/publics_controller.rb:5:in `index'
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 02:09:59 +0800
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 02:09:59 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 12.4ms)
+
+
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 02:10:00 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x00007f81542c2428>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/mailto:1" for 127.0.0.1 at 2019-03-09 02:10:50 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"mailto:1", "public"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=mailto:1):
+  
+app/controllers/publics_controller.rb:5:in `index'
+Started GET "/users/mailto:1" for 127.0.0.1 at 2019-03-09 02:10:50 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"mailto:1", "public"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=mailto:1):
+  
+app/controllers/publics_controller.rb:5:in `index'
+Started GET "/abouts" for 127.0.0.1 at 2019-03-09 02:10:50 +0800
+Processing by AboutsController#index as HTML
+  Parameters: {"about"=>{}}
+Started GET "/users/validate" for 127.0.0.1 at 2019-03-09 02:10:50 +0800
+Processing by UsersController#validate as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at 2019-03-09 02:10:51 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/andrea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `find' for #<User:0x000055eb8cae6dc0>):
+  
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users/null" for 127.0.0.1 at 2019-03-09 02:10:55 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"null", "public"=>{}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+Completed 404 Not Found in 11ms (ActiveRecord: 6.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=null):
+  
+app/controllers/publics_controller.rb:5:in `index'
+Started GET "/users/null" for 127.0.0.1 at 2019-03-09 02:10:56 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"null", "public"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=null):
+  
+app/controllers/publics_controller.rb:5:in `index'
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:11:09 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:11:09 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:11:20 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-03-09 02:11:21 +0800
+Processing by PublicsController#index as HTML
+  Parameters: {"id"=>"1", "public"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:5
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/publics_controller.rb:6
+  [1m[36mProject Load (2.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."created_at" DESC[0m  [["user_id", 1]]
+  ↳ app/controllers/publics_controller.rb:4
+Completed 200 OK in 18ms (Views: 6.5ms | ActiveRecord: 3.2ms)
+
+

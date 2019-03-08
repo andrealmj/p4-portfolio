@@ -6,7 +6,9 @@ Rails.application.routes.draw do
               }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+
   get '/users/validate' => 'users#validate'
+  get '/users/index' => 'users#index'
 
   # to render the user's portfolio page to the public (wo authenticating the user first)
   get '/users/:id' => 'publics#index'

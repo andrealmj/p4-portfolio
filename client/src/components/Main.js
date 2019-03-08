@@ -16,6 +16,10 @@ class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            userData: {
+                about: null,
+                project_data: null
+            },
             doRedirect: false
         };
     }
@@ -27,12 +31,21 @@ class Main extends Component {
         }).then( res => {
             if (!res.data.success) {
                 this.setState({ doRedirect: true });
+                localStorage.clear();
+            } else {
+                Axios({
+                    method: "GET",
+                    url: "/users/index"
+                }).then( res => {
+                    this.setState({ userData: res.data })
+                })
             }
         })
     }
 
     render() {
         if (this.state.doRedirect) {
+            console.log('no one is logged in. redirecting to LOGIN Pg')
             return <Redirect to="/login" />
         } else {
             return (
@@ -42,10 +55,10 @@ class Main extends Component {
                     <Switch>
                         <Route path="/login" component={Login} />
     
-                        <Route exact path="/" component={Home} />
-                        <Route path="/abouts" component={About} />
-                        <Route path="/contacts" component={Contact} />
-                        <Route path="/projects" component={Projects} />
+                        <Route exact path="/" render={props => <Home {...props} /> } />
+                        <Route path="/abouts" render={props => <About {...props} /> } />
+                        <Route path="/contacts" render={props => <Contact {...props} /> } />
+                        <Route path="/projects" render={props => <Projects {...props} /> } />
     
                         <Route component={Error} />
     
