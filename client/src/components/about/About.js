@@ -74,10 +74,11 @@ class About extends Component {
           >
             Edit Info
           </button>
-          <br />
           
+          <p style={{paddingTop: "20px"}}>
           Click <a href={`/users/${this.state.about.id}`} target="_blank">here</a> to see what your portfolio looks like to the world!
-
+          </p>
+          
           {/* Modal */}
           <div
             className="modal fade"
