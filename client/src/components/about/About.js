@@ -55,9 +55,6 @@ class About extends Component {
             <cite>{this.state.about.bio}</cite>
             <hr />
 
-            ID: {this.state.about.id}
-            <br />
-
             Name: {this.state.about.name}
             <br />
 
@@ -77,6 +74,9 @@ class About extends Component {
           >
             Edit Info
           </button>
+          <br />
+          
+          Click <a href={`/users/${this.state.about.id}`} target="_blank">here</a> to see what your portfolio looks like to the world!
 
           {/* Modal */}
           <div
